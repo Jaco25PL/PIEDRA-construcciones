@@ -6,12 +6,16 @@
 :root {
   font-family: "Golos Text", sans-serif;;
   color: #232323;
-  
+  font-size: 16px;
   /* color-scheme: light dark; */
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  font-size: 18px;
 }
 
 a {

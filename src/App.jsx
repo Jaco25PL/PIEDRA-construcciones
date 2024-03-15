@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './components/Header'
 import { Navigation } from './components/Navigation'
+import { About } from './components/About'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <main className='w-full'>
 
         <Header/>
+        <About/>
 
       </main>
     </div>
