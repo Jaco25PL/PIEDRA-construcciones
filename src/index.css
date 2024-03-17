@@ -2,27 +2,25 @@
 @tailwind components;
 @tailwind utilities;  
 
+@layer base{
+
+  * {
+    @apply text-gray-900 text-base m-0 p-0 box-border;
+  }
+  h1{
+    @apply text-5xl tracking-tighter leading-tight
+  }
+  p{
+    @apply text-lg
+  }
+  a{
+    @apply no-underline
+  }
+}
 
 :root {
   font-family: "Golos Text", sans-serif;;
-  color: #232323;
-  font-size: 16px;
-  /* color-scheme: light dark; */
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-p{
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  box-sizing: border-box;
 }
