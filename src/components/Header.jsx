@@ -1,3 +1,4 @@
+import { CTABtn } from "./CTABtn";
 
 export function Header() {
   
@@ -15,9 +16,9 @@ export function Header() {
           <div className='overflow-hidden max-w-5xl xl:w-full xl:px-20'>
             <img className='bg-center bg-cover md:rounded-xl w-full h-auto' src="./header-slider-01.webp" alt="header-image"/>
           </div>
-          <div className='my-10 text-xl bg-red-500 hover:bg-red-400 text-gray-50 font-bold py-2 px-4 rounded-xl inline-flex items-center cursor-pointer transition-all duration-200'>
-            <a href='#contacts'>Escríbenos</a>
-          </div>
+
+          <CTABtn action="button" name="Escríbenos"/>
+
           <div className='text-center '>
             <h2 className='text-7xl sm:text-9xl font-bold tracking-widest sm:tracking-wider '>PIEDRA</h2>
             <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>

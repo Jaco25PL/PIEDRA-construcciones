@@ -1,0 +1,8 @@
+const servicesCards = [
+    {id: 1, img: "./header-slider-01.webp", icon: "./icons/brickwall.png", title: "RENOVACION", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum unde, facere voluptate tempora a labore commodi perferendis repellat saepe dolorem at exercitationem ullam quae ex ipsam obcaecati delectus omnis qui praesentium excepturi. Nihil in impedit dolor, nostrum eum quo sed accusamus vel"},
+    {id: 2, img: "./header-slider-02.jpg", icon: "./icons/building.png", title: "CONSTRUCCION", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum unde, facere voluptate tempora a labore commodi perferendis repellat saepe dolorem at exercitationem ullam quae ex ipsam obcaecati delectus omnis qui praesentium excepturi. Nihil in impedit dolor, nostrum eum quo sed accusamus vel"},
+    {id: 3, img: "./header-slider-03.jpg", icon: "./icons/paint-roller.png", title: "PINTURA", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum unde, facere voluptate tempora a labore commodi perferendis repellat saepe dolorem at exercitationem ullam quae ex ipsam obcaecati delectus omnis qui praesentium excepturi. Nihil in impedit dolor, nostrum eum quo sed accusamus vel"},
+    {id: 4, img: "./header-slider-04.jpg", icon: "./icons/sketch.png", title: "DISEÑO", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum unde, facere voluptate tempora a labore commodi perferendis repellat saepe dolorem at exercitationem ullam quae ex ipsam obcaecati delectus omnis qui praesentium excepturi. Nihil in impedit dolor, nostrum eum quo sed accusamus vel"},
+]
+
+export default servicesCards
