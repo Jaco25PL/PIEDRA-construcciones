@@ -13,8 +13,8 @@ export function Navigation() {
     return (
         <header className='z-50 w-full backdrop-blur-md bg-slate-50 bg-opacity-50 sticky top-0'>
             <div className='w-full'>
-              <nav className='mx-5 md:mx-10 lg:mx-32 py-5 hidden sm:flex flex-row justify-between items-center'>
-                <div>
+              <nav className='mx-5 md:mx-10 lg:mx-32 py-5 [&>div]:min-w-40 hidden sm:flex flex-row justify-between items-center'>
+                <div >
                   <button onClick={() => scrollTo("top")} className='font-bold text-2xl md:text-3xl cursor-pointer'>
                     PIEDRA
                   </button>

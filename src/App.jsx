@@ -6,6 +6,8 @@ import { Footer } from './components/Footer'
 import { Services } from './components/Services'
 import { WhyUsPlus } from './components/WhyUsPlus'
 import { Projects } from './components/Projects'
+import { FAQs } from './components/FAQs'
+import { Form } from './components/From'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
         <Services/>
         <WhyUsPlus/>
         <Projects/>
+        <FAQs/>
+        <Form/>
 
       </main>
       
