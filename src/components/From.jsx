@@ -16,7 +16,7 @@ export function Form() {
     return(
         <div className="w-full pb-10 ">
             
-            <h2 className="w-fit mx-auto mb-6">NOS QUIERES DECIR ALGO?</h2>
+            <h2 className="text-center w-fit mx-auto mb-6">¿QUIERES HACERNOS LLEGAR TUS IDEAS?</h2>
 
             <div className="bg-gradient-to-t to-gray-400 from-transparent p-10 sm:max-w-xl mx-auto sm:rounded-xl [&>form]:flex [&>form]:flex-col [&>form]:gap-4 [&>form]:w-full ">
                 <form onSubmit={handleSubmit(onSubmit)} id="myForm" className=" [&_input]:w-full [&_textarea]:w-full  [&_input]:p-3 [&_input]:rounded-lg focus:[&_input]:outline focus:[&_input]:outline-gray-300 focus:[&_input]:outline-4 [&_textarea]:p-3 [&_textarea]:rounded-lg focus:[&_textarea]:outline focus:[&_textarea]:outline-gray-300 focus:[&_textarea]:outline-4 [&_textarea]:h-52 [&_textarea]:resize-none">

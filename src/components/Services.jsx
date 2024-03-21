@@ -5,13 +5,12 @@ export function Services() {
 
     return (
         <section className="max-w-full mx-5 lg:mx-20">
-            <header className="mx-auto  max-w-4xl [&_*]:text-center [&>h1]:mb-6 [&_span]:text-5xl [&_span]:font-bold  [&>p]:my-6">
-                <h2>NUESTROS <span>SERVICIOS</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quidem nisi magni maiores nam? Aspernatur deserunt facere eius, suscipit optio alias ipsa natus at quam itaque provident? Debitis repellendus est autem expedita non? Voluptatibus tempora dignissimos ipsam commodi id! Ratione reprehenderit sapiente nihil delectus a tempora, eius qui perspiciatis alias?</p>
+            <header className="mx-auto max-w-4xl [&_*]:text-center  [&>h1]:mb-6 [&>p]:my-6">
+                <h2>EXPLORE NUESTRO <br/><span className="text-3xl sm:text-4xl md:text-5xl font-bold">CATÁLOGO DE SERVICIOS</span></h2>
+                <p><span className="font-semibold sm:text-lg">PIEDRA construcciones</span> se destaca por ofrecer una amplia gama de servicios de construcción. Desde remodelaciones hasta proyectos residenciales y comerciales</p>
             </header>
 
-            <main className="my-16 [&>div]:mb-5">
-
+            <main className="my-10 [&>div]:mb-5">
                 {
                     servicesCards?.map(card => (
                         <div key={card.id} className={`bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl justify-center items-center gap-5 lg:gap-10  flex flex-col ${card.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
@@ -26,7 +25,7 @@ export function Services() {
                                     <span>{card.title}</span>
                                 </div>
                         
-                                <div className="m-5 text-center md:text-left md:ml-0 md:mr-5 [&>p]:text-base lg:[&>p]:text-lg">
+                                <div className="mx-3 my-5 text-center md:text-left md:ml-0 md:mr-5 [&>p]:text-base lg:[&>p]:text-lg">
                                     <p>{card.text}</p>
                                 </div>
                             </div>
@@ -34,10 +33,6 @@ export function Services() {
                         </div>
                     ))
                 }
-
-               
-
-
             </main>
             
         </section>

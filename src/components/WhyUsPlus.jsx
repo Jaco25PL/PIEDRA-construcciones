@@ -7,9 +7,8 @@ export function WhyUsPlus() {
     return(
         <section className="w-full my-10 pt-10 pb-5 relative after:absolute after:content-[''] after:bottom-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
 
-            <header className="w-full [&_*]:w-fit [&_*]:mx-auto [&_*]:text-center before:absolute before:content-[''] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300 ">
-                <h2>NO SOLO REALIZAMOS EL TRABAJO</h2>
-                <h3 className="text-5xl font-bold tracking-tighter">CONSTRUIMOS UNA RELACION</h3>
+            <header className="w-full [&_*]:w-fit [&_*]:mx-auto [&_*]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold [&_span]:tracking-tighter before:absolute before:content-[''] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300 ">
+                <h2>¿POR QUÉ NO <span>INVERTIR</span> EN EL <br/>FUTURO DE TU HOGAR?</h2>
             </header>
 
             <div className="sm:mx-4 lg:mx-20">

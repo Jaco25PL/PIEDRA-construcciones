@@ -8,13 +8,13 @@
     @apply text-gray-900 text-base m-0 p-0 box-border;
   }
   h1{
-    @apply text-5xl tracking-tighter leading-tight
+    @apply text-3xl sm:text-4xl md:text-5xl tracking-tighter leading-tight
   }
   h2{
-    @apply text-5xl tracking-tighter leading-tight
+    @apply text-3xl sm:text-4xl md:text-5xl tracking-tighter leading-tight
   }
   p{
-    @apply text-lg
+    @apply sm:text-lg
   }
   a{
     @apply no-underline
@@ -22,7 +22,7 @@
 }
 
 :root {
-  font-family: "Golos Text", sans-serif;;
+  font-family: "Golos Text", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

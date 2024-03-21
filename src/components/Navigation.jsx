@@ -1,3 +1,5 @@
+import { MobileNav } from "./MobileNav"
+
 export function Navigation() {
 
   const scrollTo = ( to ) => {
@@ -11,9 +13,10 @@ export function Navigation() {
   }
 
     return (
-        <header className='z-50 w-full backdrop-blur-md bg-slate-50 bg-opacity-50 sticky top-0'>
-            <div className='w-full'>
-              <nav className='mx-5 md:mx-10 lg:mx-32 py-5 [&>div]:min-w-40 hidden sm:flex flex-row justify-between items-center'>
+        <header className='z-50 w-full  sticky top-0'>
+            <div className='w-full backdrop-blur-md bg-slate-50 bg-opacity-50 '>
+              
+              <nav className=' mx-5 md:mx-10 lg:mx-32 py-5 lg:[&>div]:min-w-40 hidden sm:flex flex-row justify-between items-center'>
                 <div >
                   <button onClick={() => scrollTo("top")} className='font-bold text-2xl md:text-3xl cursor-pointer'>
                     PIEDRA
@@ -31,7 +34,15 @@ export function Navigation() {
                   <button type="button" onClick={() => scrollTo("bottom")} className='font-bold md:text-xl'>Contactanos</button>
                 </div>
               </nav>
+
+              
+              
             </div>
+
+            <div className="sm:hidden">
+                <MobileNav scrollTo={scrollTo}/>
+              </div>
+
         </header>
     )
 }
