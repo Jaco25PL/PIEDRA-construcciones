@@ -1,9 +1,123 @@
 const projects = [
-    {id: 1, before: "./header-slider-02.jpg", after: "./header-slider-03.jpg", title: "Proyecto Uno", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id: 2, before: "./header-slider-03.jpg", after: "./header-slider-02.jpg", title: "Proyecto Dos", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id: 3, before: "./header-slider-04.jpg", after: "./header-slider-01.webp", title: "Proyecto Tres", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id: 4, before: "./header-slider-02.jpg", after: "./header-slider-04.jpg", title: "Proyecto Cuatro", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id: 5, before: "./header-slider-03.jpg", after: "./header-slider-02.jpg", title: "Proyecto Cinco", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {
+        id: 1,
+        title: "Reforma completa",
+        images: [
+          "./header-slider-01.webp",
+          "./header-slider-02.jpg",
+          "./header-slider-03.jpg",
+          "./header-slider-04.jpg",
+          "./header-slider-03.jpg",
+          "./header-slider-02.jpg",
+          "./header-slider-03.jpg",
+          "./header-slider-04.jpg",
+          "./header-slider-03.jpg",
+          "./header-slider-04.jpg",
+        ],
+        text: "En este proyecto realizamos una reforma total, planeando primeramente junto con el cliente el resulta, llevandolo a un disaño 3D La obra se trato de una cambio de los pisos ya que la sa tenia aun pisos de ladrillo, se coloco yeso con lana de vidrio en paredes y techos de lasabitaciones principales, tambien realizamos un trabajo de pintura total del interior de la casa."
+    },
+    {
+        id: 2,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+            "./header-slider-02.jpg",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
+    {
+        id: 3,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+            "./header-slider-01.webp",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
+    {
+        id: 4,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
+    {
+        id: 5,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
+    {
+        id: 6,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
+    {
+        id: 7,
+        title: "Proyecto Dos",
+        images: [
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+            "./header-slider-03.jpg",
+        ],
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consecteturg elit."
+    },
 ]
 
 export default projects

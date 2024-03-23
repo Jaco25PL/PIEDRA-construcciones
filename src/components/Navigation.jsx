@@ -13,7 +13,7 @@ export function Navigation() {
   }
 
     return (
-        <header className='z-50 w-full  sticky top-0'>
+        <header className='z-40 w-full  sticky top-0'>
             <div className='w-full backdrop-blur-md bg-slate-50 bg-opacity-50 '>
               
               <nav className=' mx-5 md:mx-10 lg:mx-32 py-5 lg:[&>div]:min-w-40 hidden sm:flex flex-row justify-between items-center'>

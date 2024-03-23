@@ -1,7 +1,14 @@
+import { useState } from "react"
 import servicesCards from "../data/servicesCards"
-
+import { Loader } from "./Loader"
 
 export function Services() {
+
+    const [ loading , setLoading ] = useState(true)
+
+    const handleImage = () => {
+        setLoading(false)
+    }
 
     return (
         <section className="max-w-full mx-5 lg:mx-20">
@@ -10,13 +17,14 @@ export function Services() {
                 <p><span className="font-semibold sm:text-lg">PIEDRA construcciones</span> se destaca por ofrecer una amplia gama de servicios de construcción. Desde remodelaciones hasta proyectos residenciales y comerciales</p>
             </header>
 
-            <main className="my-10 [&>div]:mb-5">
+            <main className="my-10 [&>div]:mb-5 ">
                 {
                     servicesCards?.map(card => (
                         <div key={card.id} className={`bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl justify-center items-center gap-5 lg:gap-10  flex flex-col ${card.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
 
-                            <div className="flex-shrink flex-grow basis-1/2 overflow-hidden rounded-xl">
-                                <img src={card.img} alt={card.title} />
+                            <div className="relative  flex-shrink flex-grow basis-1/2 overflow-hidden   rounded-xl [&>img]:w-full [&>img]:h-auto">
+                                {loading && <Loader/>}
+                                <img loading="lazy" onLoad={handleImage} src={card.img} alt={card.title} />
                             </div>
     
                             <div className="flex-shrink flex-grow basis-1/2">

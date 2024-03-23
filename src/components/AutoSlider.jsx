@@ -13,7 +13,7 @@ export function AutoSlider() {
     },[])
     
     return(
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center ">
             <div className=" inline-flex flex-nowrap overflow-hidden w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                 <div ref={sliderRef} className="flex flex-nowrap animate-infinite-scroll">
                     {
