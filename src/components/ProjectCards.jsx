@@ -12,9 +12,12 @@ export function ProjectCards( {projects} ) {
         const newCard = { ...open, [data.id]: !open[data.id] || false}
         setOpen(newCard)
         setCurrentIndex(0)
+        document.body.style.overflow = "hidden"
     }
     const handleClose = () => {
         setOpen(!open)
+        document.body.style.overflow = "auto"
+
     }
 
     const handleNext = (card) => {
@@ -55,7 +58,7 @@ export function ProjectCards( {projects} ) {
                             </div>
                         </div>
 
-                        <div className={` ${open[card.id] ? "flex" : "hidden"} bg-white items-center justify-center z-50 fixed top-0 bg-opacity-50 backdrop-blur-sm w-full h-dvh`}>
+                        <div className={` ${open[card.id] ? "flex" : "hidden"} bg-white items-center justify-center z-50 fixed top-0 bg-opacity-50 backdrop-blur w-full h-dvh`}>
                             <ProjectSliders card={card} currentIndex={currentIndex} handleClose={handleClose} handlePrev={handlePrev} handleNext={handleNext}/>
                         </div> 
 
