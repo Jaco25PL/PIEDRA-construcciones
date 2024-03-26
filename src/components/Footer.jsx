@@ -50,10 +50,10 @@ export function Footer() {
 
                     <div>
                         <ul className="[&>li]:flex [&>li]:justify-start [&>li]:items-center [&>li]:mb-3 [&_img]:max-w-8 [&_img]:mr-5 md:[&_img]:mr-3 [&_span]:border-b-2 [&_span]:border-gray-700  [&_span]:tracking-wide [&_span]:text-gray-50 [&_span]:font-semibold [&_span]:text-lg  hover:[&_span]:transform hover:[&_span]:scale-110 [&_span]:transition-transform [&_span]:duration-200">
-                            <li><img src="./icons/light/write-light.png" alt="Write" /><span><button>Escribenos</button></span></li>
+                            <li><img src="./icons/write-light.png" alt="Write" /><span><button>Escribenos</button></span></li>
                             <li><img src="./icons/whatsapp-light.svg" alt="WhatsAapp" /><span><a href="https://api.whatsapp.com/send?phone=59893595589" target="blank">WhatsApp</a></span></li>
-                            <li><img src="./icons/light/phone-light-02.png" alt="Phone" /><span>093 595 589</span></li>
-                            <li><img src="./icons/light/envelope-light.png" alt="Mail" /><span><a href="mailto:piedraconstr.uy@gmail.com">piedraconstr.uy</a></span></li>
+                            <li><img src="./icons/phone-light-02.png" alt="Phone" /><span>093 595 589</span></li>
+                            <li><img src="./icons/envelope-light.png" alt="Mail" /><span><a href="mailto:piedraconstr.uy@gmail.com">piedraconstr.uy</a></span></li>
                         </ul>
                     </div>
                 </div>

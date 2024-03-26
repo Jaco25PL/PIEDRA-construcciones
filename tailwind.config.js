@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        "infinite-scroll": "infinite-scroll 25s linear infinite",
+        "infinite-scroll": "infinite-scroll 35s linear infinite",
+        "infinite-scroll-slow": "infinite-scroll 100s 1s linear infinite",
         "bounce-loading": "bounce-loading 1s linear infinite" ,
         "bounce-loading-1": "bounce-loading 1s linear 0.3s infinite",
         "bounce-loading-2": "bounce-loading 1s linear 0.6s infinite",

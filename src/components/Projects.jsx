@@ -2,12 +2,30 @@ import { useState } from "react"
 import projects from "../data/projects"
 import { Loader } from "./Loader"
 import { ProjectCards } from "./ProjectCards"
+import { useRef } from "react"
 
 export function Projects() {
 
     const [ loading , setLoading ] = useState(true)
     const handleImage = () => {
         setLoading(false)
+    }
+
+    const imgContRef = useRef(null)
+
+    const [ newProjects , setNewProjects ] = useState(projects.slice(0, 2))
+    const [ handleView, setHandleView ] = useState(false)
+    const handleProjectsView = () => {
+        const imgContH = imgContRef.current.getBoundingClientRect()
+        const distanceToTop = window.scrollY + imgContH.top - 300
+        
+        if(!handleView){
+            setNewProjects(projects)
+        }else{
+            setNewProjects(projects.slice(0, 2))
+            window.scrollTo({top: distanceToTop, behavior: "smooth"})
+        }
+        setHandleView(!handleView)
     }
 
     return(
@@ -21,9 +39,9 @@ export function Projects() {
                     <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, no solo construimos estructuras, sino que transformamos sueños en realidad. Descubre la creatividad e innovación que ofrecemos en cada obra</p>
                 </div>
 
-                <div className="relative overflow-hidden rounded-xl max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:cover [&>img]:w-full [&>img]:h-auto md:[&>img]:rounded-xl">
+                <div className="relative overflow-hidden md:rounded-xl max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:cover [&>img]:w-full [&>img]:h-auto md:[&>img]:rounded-xl">
                     { loading && <Loader/> }
-                    <img onLoad={handleImage} loading="lazy" src="./header-slider-02.jpg" alt="project" />
+                    <img onLoad={handleImage} loading="lazy" src="./projects/truck-2.avif" alt="project" />
                 </div>
 
             </div>
@@ -35,14 +53,12 @@ export function Projects() {
 
                 <div className="relative [&>div]:mb-5 md:[&>div]:mb-10">
                    
-                    <div className="relative"> 
-                    
-                        <ProjectCards projects={projects}/>
-                        
+                    <div  ref={imgContRef}  className="relative"> 
+                        <ProjectCards newProjects={newProjects}/>
                     </div>
 
                     <div className="mt-10 max-w-full flex justify-center gap-5  [&>button]:bg-gray-900 [&>a]:bg-red-500 [&_*]:py-2 sm:[&_*]:py-4 [&_*]:px-4 sm:[&_*]:px-8 [&_*]:rounded-lg [&_*]:text-lg [&_*]:font-bold [&_*]:text-gray-50 hover:[&>button]:bg-red-500 hover:[&>a]:bg-gray-900 [&_*]:transition-all [&_*]:duration-200 hover:[&_*]:transform hover:[&_*]:scale-110 ">
-                        <button type="button">CONOCE MÁS</button>
+                        <button onClick={handleProjectsView} type="button">{handleView ? "VER MENOS" : "CONOCE MÁS"}</button>
                         <a target="blank" href="https://www.instagram.com/piedra.construcciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">VER GALERÍA</a>
                     </div>
                 </div>

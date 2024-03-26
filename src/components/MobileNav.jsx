@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import { useState } from "react"
 
 export function MobileNav({ scrollTo }) {
@@ -5,17 +7,17 @@ export function MobileNav({ scrollTo }) {
     const [ isOpen, setIsOpen ] = useState(false)
 
     const handleClick = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(!isOpen)
     }
     
     return (
-      <div className="relative w-full">
+      <div className="relative w-full ">
           <nav className='w-full backdrop-blur-md bg-slate-50 bg-opacity-50  relative px-5 h-24 md:mx-10 lg:mx-32 py-5 lg:[&>div]:min-w-40 flex flex-row justify-between items-center'>
               <div>
-                  <button type="submit" onClick={handleClick} className="flex flex-col justify-center items-center gap-2 [&>span]:bg-gray-900 [&>span]:block [&>span]:transition-all [&>span]:duration-300 [&>span]:ease-in-out [&>span]:h-1 [&>span]: [&>span]:rounded-lg">
-                      <span className={`${isOpen ? 'w-6 rotate-45 translate-y-5' : 'w-9 -translate-y-0.5'}`}></span>
-                      <span className={`w-10 ${isOpen ? 'translate-x-2.5 ' : 'w-10'}`}></span>
-                      <span className={`${isOpen ? 'w-6 -rotate-45 -translate-y-5' : 'w-9 translate-y-0.5'}`}></span>
+                  <button type="submit" onClick={handleClick} className="flex flex-col justify-center items-center gap-2 [&>span]:bg-gray-900 [&>span]:block [&>span]:transition-all [&>span]:duration-300 [&>span]:ease-in-out [&>span]:h-[3px] [&>span]: [&>span]:rounded-lg">
+                      <span className={`${isOpen ? 'w-6 rotate-45 translate-y-[19px]' : 'w-8 -translate-y-0.5'}`}></span>
+                      <span className={`w-8 ${isOpen ? 'translate-x-2 ' : 'w-10'}`}></span>
+                      <span className={`${isOpen ? 'w-6 -rotate-45 -translate-y-[19px]' : 'w-8 translate-y-0.5'}`}></span>
                   </button>
               </div>
               

@@ -1,27 +1,22 @@
 /* eslint-disable react/prop-types */
 
 
-export function ProjectSliders({ card, currentIndex, handleClose, handleNext, handlePrev }) {
+export function ProjectSliders({ card, currentIndex, handleClose, handleNext, handlePrev, manualScroll, handleAutoScroll }) {
 
     return (
         <>
         {/* mobile */}
-            <div  className=" md:hidden md:mx-16 lg:w-10/12 h-1/2 md:h-5/6 flex flex-col justify-center items-start resize-none overflow-x-auto scrollbar-none scrollbar-webkit md:rounded-xl">
-                <div className="inline-flex ">
+            <div onTouchMove={handleAutoScroll} className="md:hidden resize-none overflow-x-auto scrollbar-none scrollbar-webkit">
+                <div className={`inline-flex ${manualScroll ? "animate-none" : "animate-infinite-scroll-slow"}`}>
                     {
                         card?.images.map((img, index) => (
-                            <div key={index} className="h-fit w-[370px] md:w-[700px] m-2 overflow-hidden rounded-lg">
+                            <div key={index} className="h-fit w-[370px] m-2 overflow-hidden rounded-lg">
                                 <img  src={img} alt="project" className=""/>
                             </div>
                         ))
                     }
                 </div>
             </div>
-
-            <div className="md:hidden absolute h-4 w-full bottom-52 bg-white">
-                <div className="relative h-2 w-3/4 bg-gray-950 rounded-full mx-auto top-1 animate-infinite-scroll"></div>
-            </div>
-
 
         {/* desktop */}
             <div  className="md:mx-16 lg:w-10/12 h-1/2 md:h-5/6 hidden md:flex justify-center overflow-hidden md:rounded-xl bg-gray-900 bg-opacity-70">

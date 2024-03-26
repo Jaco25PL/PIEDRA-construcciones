@@ -1,10 +1,10 @@
 const projects = [
     {
         id: 1,
-        title: "Reforma completa",
+        title: "Reforma Total",
         images: [
-          "./header-slider-01.webp",
-          "./header-slider-02.jpg",
+          "./whyus/details-02.jpg",
+          "./whyus/performance.jpg",
           "./header-slider-03.jpg",
           "./header-slider-04.jpg",
           "./header-slider-03.jpg",
@@ -14,7 +14,7 @@ const projects = [
           "./header-slider-03.jpg",
           "./header-slider-04.jpg",
         ],
-        text: "En este proyecto realizamos una reforma total, planeando primeramente junto con el cliente el resulta, llevandolo a un disaño 3D La obra se trato de una cambio de los pisos ya que la sa tenia aun pisos de ladrillo, se coloco yeso con lana de vidrio en paredes y techos de lasabitaciones principales, tambien realizamos un trabajo de pintura total del interior de la casa."
+        text: "Para este proyecto, primeramente planeamos con el cliente el resultado deseado, haciéndole un diseño 3D. Comenzamos cambiando los viejos pisos de ladrillos, colocamos yeso con lana de vidrio en las paredes y techos de las habitaciones principales. Y además realizamos un trabajo de pintura completo en el interior de la casa"
     },
     {
         id: 2,

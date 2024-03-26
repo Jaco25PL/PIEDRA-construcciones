@@ -23,7 +23,7 @@ export function Header() {
             <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</p>
           </div>
           
-          <div className='relative overflow-hidden sm:rounded-xl md:max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:bg-cover  [&>img]:w-full [&>img]:h-auto' >
+          <div className='relative overflow-hidden sm:[&>img]:rounded-xl md:max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:bg-cover [&>img]:w-full [&>img]:h-auto' >
             { loading && <Loader/> }
             <img onLoad={handleImage} loading="lazy" src="./header-slider-01.webp" alt="header-image"/>
           </div>
