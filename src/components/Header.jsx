@@ -1,20 +1,16 @@
-import { useState } from "react"
 import { CTABtn } from "./CTABtn"
-import { Loader } from "./Loader"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import "swiper/css"
+import "swiper/css/pagination"
+import { Autoplay, Pagination } from "swiper/modules"
+import headerSlider from "../data/header-slider"
 
 export function Header() {
-  
-  
-  const [ loading , setLoading ] = useState(true)
-
-  const handleImage = () => {
-      setLoading(false)
-  }
 
     return(
       <section  className='mx-0 md:mx-20 xl:mx-40'>
         
-        <div className='mt-16 sm:mx-4 flex flex-col items-center'>
+        <div className='mt-10 sm:mx-4 flex flex-col items-center'>
           <div className='mx-2 max-w-4xl [&>h1]:text-center [&_span]:font-bold [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl'>
             <h1>ENTREGAMOS LA <span>MÁXIMA CALIDAD</span> EN TODO LO QUE HACEMOS</h1>
           </div>
@@ -23,9 +19,31 @@ export function Header() {
             <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</p>
           </div>
           
-          <div className='relative overflow-hidden sm:[&>img]:rounded-xl md:max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:bg-cover [&>img]:w-full [&>img]:h-auto' >
-            { loading && <Loader/> }
-            <img onLoad={handleImage} loading="lazy" src="./header-slider-01.webp" alt="header-image"/>
+          <div>
+            <Swiper 
+              slidesPerView={"auto"}
+              spaceBetween={5} 
+              centeredSlides={true}
+              lazy="load"
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[ Autoplay, Pagination ]}
+              className="mySwiper overflow-hidden sm:rounded-xl lg:max-h-[600px] xl:max-w-[900px] sm:[&_img]:rounded-xl lg:[&_img]:w-full"
+            >
+              {
+                headerSlider?.map(e => (
+                  <SwiperSlide key={e.id} >
+                    <img src={e.img} alt="PIEDRA" loading="lazy"/>
+                  </SwiperSlide>
+                ))
+              }
+
+            </Swiper>
           </div>
           
           <CTABtn action="button" name="Escríbenos"/>

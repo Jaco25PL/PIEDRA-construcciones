@@ -25,9 +25,9 @@ export function About() {
                         <p>Cada proyecto es una oportunidad para brillar, entregando resultados que superan tus expectativas y <span className="font-semibold sm:text-lg">fortalecen nuestra relación contigo</span></p>
                     </div>
 
-                    <div className="relative max-w-lg md:max-w-xl overflow-hidden rounded-xl mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
+                    <div className="relative min-w-[200px] min-h-[50px] flex items-center max-w-lg md:max-w-xl overflow-hidden rounded-xl mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
                         { loading && <Loader/> }
-                        <img onLoad={handleImage} loading="lazy" src="./header-slider-01.webp" alt="team" />
+                        <img onLoad={handleImage} loading="lazy" src="./header-slider/truck.avif" alt="team" />
                     </div>
 
                     <div className="text-center [&>*]:mx-auto mb-6 [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold">
