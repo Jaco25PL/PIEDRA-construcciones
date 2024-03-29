@@ -9,7 +9,7 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
                 <div className={`inline-flex ${manualScroll ? "animate-none" : "animate-infinite-scroll-slow"} items-center`}>
                     {
                         card?.images.map((img, index) => (
-                            <div key={index} className="h-fit w-[370px] m-2 overflow-hidden rounded-lg">
+                            <div key={index} className="h-fit w-[370px] m-2 overflow-hidden rounded">
                                 <img  src={img} alt="project" className=""/>
                             </div>
                         ))
@@ -20,7 +20,7 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
         {/* desktop */}
 
             <div  className=" lg:w-10/12  hidden md:flex justify-center">
-                <div className="max-h-dvh md:p-2 px-0 flex flex-col items-center justify-center [&>img]:w-auto [&>img]:rounded-lg [&>img]:h-full [&>img]:duration-500">
+                <div className="max-h-dvh md:p-2 px-0 flex flex-col items-center justify-center [&>img]:w-auto [&>img]:rounded [&>img]:h-full [&>img]:duration-500">
                     <img src={card.images[currentIndex]} alt="image"/>
                 </div>
             </div>

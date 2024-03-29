@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+
+import { useState , useRef } from "react"
 import projects from "../data/projects"
 import { Loader } from "./Loader"
 import { ProjectCards } from "./ProjectCards"
-import { useRef } from "react"
 
 export function Projects({ projectsRef }) {
 
@@ -16,15 +16,17 @@ export function Projects({ projectsRef }) {
 
     const [ newProjects , setNewProjects ] = useState(projects.slice(0, 2))
     const [ handleView, setHandleView ] = useState(false)
+
     const handleProjectsView = () => {
-        const imgContH = imgContRef.current.getBoundingClientRect()
-        const distanceToTop = window.scrollY + imgContH.top - 300
+        const imgContH = imgContRef.current.getBoundingClientRect().top + window.scrollY - 200
         
         if(!handleView){
             setNewProjects(projects)
         }else{
             setNewProjects(projects.slice(0, 2))
-            window.scrollTo({top: distanceToTop, behavior: "smooth"})
+            if(imgContRef.current){
+                window.scrollTo({ top: imgContH, behavior: "auto"})
+            }
         }
         setHandleView(!handleView)
     }
@@ -37,10 +39,10 @@ export function Projects({ projectsRef }) {
                     <div className="[&>*]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold [&_span]:tracking-tighter">
                         <h2>DETRÁS DE CADA PROYECTO<br/><span>HAY UNA HISTORIA</span></h2>
                     </div>
-                    <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, no solo construimos estructuras, sino que transformamos sueños en realidad. Descubre la creatividad e innovación que ofrecemos en cada obra</p>
+                    <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, no solo construimos, sino que transformamos sueños en realidad.<br/>Descubre la creatividad e innovación que ofrecemos en cada obra</p>
                 </div>
 
-                <div className="relative overflow-hidden md:rounded-xl max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:cover [&>img]:w-full [&>img]:h-auto md:[&>img]:rounded-xl">
+                <div className="relative flex items-center overflow-hidden md:rounded-md max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:cover [&>img]:w-full [&>img]:h-auto md:[&>img]:rounded-md">
                     { loading && <Loader/> }
                     <img onLoad={handleImage} loading="lazy" src="./projects/truck-2.avif" alt="project" />
                 </div>

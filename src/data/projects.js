@@ -77,7 +77,7 @@ const projects = [
             "./projects/ref-outdoor/18.avif",
             "./projects/ref-outdoor/19.avif",
         ],
-        text: "Empezando con Diseños 3D, transformamos el cuarto de lavado en un estar con cocina integrada, cambiando el piso, demoliendo paredes, pintando e incorporando un ventanal para dar luz natural. En el exterior, revestimos el muro con piedra natural y pintamos toda la casa por fuera"
+        text: "Empezando con Diseños 3D, transformamos el cuarto de lavado en un estar con cocina integrada, cambiando el piso, demoliendo paredes, pintando e incorporando un ventanal para dar luz natural. En el exterior, revestimos el muro con piedra natural y pintamos toda la casa"
     },
     {
         id: 4,
@@ -91,7 +91,7 @@ const projects = [
            "./projects/paint-facade/06.avif",
            "./projects/paint-facade/07.avif",
         ],
-        text: "Esta casa estuvo incompleta durante años. Utilizamos un diseño 3D para explorar combinaciones de colores hasta dar con el indicado. Siguiendo el diseño original de la fachada, pintamos con diferentes tonos del mismo color para darle personalidad a la casa"
+        text: "Esta casa estuvo incompleta durante años. Utilizamos un diseño 3D para explorar combinaciones de colores hasta tomar una decisión. Siguiendo el diseño original de la fachada, pintamos con diferentes tonos del mismo color para darle personalidad a la casa"
     },
     {
         id: 5,
@@ -125,11 +125,11 @@ const projects = [
            "./projects/ref-house-02/26.avif",
            "./projects/ref-house-02/27.avif",
         ],
-        text: "Para combatir el frío que afectaba a nuestro cliente, realizamos un trabajo de yeso en techos y paredes exteriores, asegurando un hogar más cálido. También renovamos por completo la instalación eléctrica y sanitaria. En el segundo piso, instalamos piso de porcelanato imitación madera, reemplazamos las ventanas por nuevas de aluminio con doble vidrio y renovamos la escalera. Para finalizar, llevamos a cabo un trabajo completo de pintura"
+        text: "Para combatir el frío que afectaba a nuestro cliente, realizamos un trabajo de yeso en techos y paredes exteriores, asegurando un hogar más cálido. Además, renovamos por completo la instalación eléctrica y sanitaria. En el segundo piso, instalamos piso de porcelanato imitación madera, reemplazamos las ventanas por nuevas de aluminio con doble vidrio y renovamos la escalera. Para finalizar, llevamos a cabo un trabajo completo de pintura"
     },
     {
         id: 6,
-        title: "Integracion de Habitacion",
+        title: "Integración de Habitación",
         images: [
           "./projects/stair/01.avif",
           "./projects/stair/02.avif",
@@ -141,7 +141,7 @@ const projects = [
     },
     {
         id: 7,
-        title: "Construccion de Cocina",
+        title: "Construcción de Cocina",
         images: [
             "./projects/cons-kitchen/01.avif",
             "./projects/cons-kitchen/02.avif",
@@ -170,7 +170,7 @@ const projects = [
             "./projects/paint/08.avif",
             "./projects/paint/09.avif",
         ],
-        text: "Las rejas estaban oxidándose porque no habían sido pintadas correctamente. Después de lijarlas por completo, aplicamos una pintura especial antioxidante para prevenir futura oxidación"
+        text: "Las rejas estaban oxidándose porque no habían sido pintadas correctamente. Después de realizar un proceso de lijado, aplicamos una pintura especial antioxidante para prevenir futura oxidación"
     },
     {
         id: 9,

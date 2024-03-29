@@ -8,7 +8,6 @@ import { Loader } from "./Loader"
 
 export function About({ aboutRef }) {
 
-
     const [ loading , setLoading ] = useState(true)
 
     const handleImage = () => {
@@ -26,7 +25,7 @@ export function About({ aboutRef }) {
                         <p>Cada proyecto es una oportunidad para brillar, entregando resultados que superan tus expectativas y <span className="font-semibold sm:text-lg">fortalecen nuestra relación contigo</span></p>
                     </div>
 
-                    <div className="relative min-w-[200px] min-h-[50px] flex items-center max-w-lg md:max-w-xl overflow-hidden rounded-xl mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
+                    <div className="relative min-w-[200px] min-h-[260px] xl:min-h-[380px] flex items-center max-w-lg md:max-w-xl overflow-hidden rounded-md mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
                         { loading && <Loader/> }
                         <img onLoad={handleImage} loading="lazy" src="./header-slider/truck.avif" alt="team" />
                     </div>

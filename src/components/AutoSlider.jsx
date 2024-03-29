@@ -18,7 +18,7 @@ export function AutoSlider() {
                 <div ref={sliderRef} className="flex flex-nowrap animate-infinite-scroll">
                     {
                         clientCards?.map(clientCard => (
-                            <div key={clientCard.id} className={`mx-3 md:mx-6 w-80 px-3 py-5 md:px-6 md:py-10 rounded-xl ${clientCard.id % 2 === 0 ? "bg-slate-100" : "bg-slate-200"}`}>
+                            <div key={clientCard.id} className={`mx-3 md:mx-6 w-80 h-80 px-3 py-5 md:px-6 md:py-10 rounded-xl ${clientCard.id % 2 === 0 ? "bg-slate-100" : "bg-slate-200"}`}>
                                 <div className="mb-10 flex w-full gap-5 md:gap-10 items-center">
                                     <img className="w-20 md:max-w-24 h-auto rounded-full" src={clientCard.img} alt={clientCard.userName} />
                                     <h5 className="text-lg font-medium">{clientCard.userName}</h5>

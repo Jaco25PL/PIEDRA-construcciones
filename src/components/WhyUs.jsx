@@ -24,9 +24,9 @@ export function WhyUs() {
             <div>
                     {
                         cardData?.map(card => (
-                            <div key={card.id} className="relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
+                            <div key={card.id} className=" relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
 
-                                <div className=" relative min-h-20 min-w-52 flex-shrink flex-grow basis-3/5 overflow-hidden rounded-xl [&>img]:w-full [&>img]:h-auto">
+                                <div className="relative min-h-[260px] xl:min-h-[400px] min-w-52 flex items-center flex-shrink flex-grow basis-3/5 overflow-hidden rounded [&>img]:rounded [&>img]:w-full [&>img]:h-auto">
                                     { loading && <Loader/> }
                                     <img onLoad={handleImage} loading="lazy" src={card.img} alt={card.title} />
                                 </div>

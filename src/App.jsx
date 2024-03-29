@@ -7,7 +7,7 @@ import { Services } from './components/Services'
 import { WhyUsPlus } from './components/WhyUsPlus'
 import { Projects } from './components/Projects'
 import { FAQs } from './components/FAQs'
-import { Form } from './components/From'
+import { Form } from './components/Form'
 import { useRef } from 'react'
 import useScrollTo from './hooks/useScrollTo'
 

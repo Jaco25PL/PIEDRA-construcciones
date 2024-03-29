@@ -15,8 +15,8 @@ export function WhyUsPlus() {
                 {
                     cardData?.map(card => (
                         <div key={card.id} className="relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
-                            <div className="relative flex-shrink flex-grow basis-3/5 max-h-[500px] w-full overflow-hidden rounded-xl">
-                                <video className="w-full" controls autoPlay muted loop>
+                            <div className="relative flex-shrink flex-grow basis-3/5 max-h-[500px] w-full overflow-hidden rounded">
+                                <video className="w-full rounded" controls autoPlay muted loop>
                                     <source src={card.img} type="video/mp4"/>
                                 </video>
                             </div>
