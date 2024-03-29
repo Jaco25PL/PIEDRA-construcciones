@@ -45,7 +45,7 @@ export function ProjectCards( {newProjects} ) {
                 newProjects?.map(card => (
                     <div key={card.id} className="mb-5 h-full overflow-hidden rounded-lg mx-4 lg:mx-10 xl:mx-20 flex justify-center items-center flex-col md:flex-row bg-gradient-to-b md:bg-gradient-to-r from-transparent to-slate-200 ">
                         
-                        <div className="sm:flex gap-5 flex-shrink flex-grow basis-1/2">
+                        <div className="sm:grid grid-rows-1 grid-flow-col gap-5 flex-shrink flex-grow basis-1/2">
                             {
                                 card.images.slice(1, 3).map((img, index) => (
                                     <div key={index} className="hidden sm:block overflow-hidden rounded [&_img]:w-full [&_img]:aspect-square [&_img]:object-cover">
