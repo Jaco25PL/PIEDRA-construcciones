@@ -24,7 +24,7 @@ export function Services({ servicesRef }) {
                     servicesCards?.map(card => (
                         <div key={card.id} className={`bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl justify-center items-center gap-5 lg:gap-10  flex flex-col ${card.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
 
-                            <div className="relative flex-shrink flex-grow basis-1/2 flex items-center overflow-hidden min-w-[100px] min-h-[290px] xl:min-h-[430px] max-h-[260px] md:max-h-[312px] lg:max-h-[320px] xl:max-h-[440px] rounded [&>img]:w-full [&>img]:h-auto">
+                            <div className="relative flex-shrink flex-grow basis-1/2 flex items-center overflow-hidden min-w-[100px] min-h-[290px] xl:min-h-[430px] max-h-[260px] sm:max-h-[400px] lg:max-h-[320px] xl:max-h-[440px] rounded [&>img]:w-full [&>img]:h-auto">
                                 {loading && <Loader/>}
                                 <img loading="lazy" onLoad={handleImage} src={card.img} alt={card.title} />
                             </div>

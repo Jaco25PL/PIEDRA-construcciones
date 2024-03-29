@@ -120,7 +120,6 @@ const projects = [
            "./projects/ref-house-02/21.avif",
            "./projects/ref-house-02/22.avif",
            "./projects/ref-house-02/23.avif",
-           "./projects/ref-house-02/24.avif",
            "./projects/ref-house-02/25.avif",
            "./projects/ref-house-02/26.avif",
            "./projects/ref-house-02/27.avif",
@@ -129,7 +128,7 @@ const projects = [
     },
     {
         id: 6,
-        title: "Integración de Habitación",
+        title: "Escalera Integrada",
         images: [
           "./projects/stair/01.avif",
           "./projects/stair/02.avif",

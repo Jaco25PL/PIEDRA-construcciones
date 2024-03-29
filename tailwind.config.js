@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         "infinite-scroll": "infinite-scroll 35s linear infinite",
+        "infinite-scroll-v2": "infinite-scroll 80s linear infinite",
         "infinite-scroll-slow": "infinite-scroll 100s 1s linear infinite",
         "bounce-loading": "bounce-loading 1s linear infinite" ,
         "bounce-loading-1": "bounce-loading 1s linear 0.3s infinite",

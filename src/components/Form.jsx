@@ -18,7 +18,7 @@ export function Form({ fromRef }) {
 
         <div ref={fromRef} className="px-5 sm:mx-0 w-full pb-10 ">
             
-            <h2 className="text-center w-fit mx-auto mb-6">¿QUIERES HACERNOS LLEGAR TUS IDEAS?</h2>
+            <h2 className="text-center w-fit mx-auto mb-6">CONTACTATE CON NOSOTROS</h2>
 
             <div className=" border-solid border-2 border-gray-200 px-5 sm:px-10 py-10 sm:max-w-xl mx-auto sm:rounded [&>form]:flex [&>form]:flex-col [&>form]:gap-4 [&>form]:w-full ">
                 {/* <form action="https://getform.io/f/lakmkona" method="POST" onSubmit={handleSubmit(onSubmit)} id="myForm" className=" [&_input]:w-full [&_textarea]:w-full  [&_input]:p-3 [&_input]:rounded-lg focus:[&_input]:outline focus:[&_input]:outline-gray-300 focus:[&_input]:outline-4 [&_textarea]:p-3 [&_textarea]:rounded-lg focus:[&_textarea]:outline focus:[&_textarea]:outline-gray-300 focus:[&_textarea]:outline-4 [&_textarea]:h-52 [&_textarea]:resize-none"> */}

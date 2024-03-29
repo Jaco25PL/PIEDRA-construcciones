@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ProjectSliders } from "./ProjectSliders"
 
-export function ProjectCards( {newProjects} ) {
+export function ProjectCards( {newProjects, projectMobile} ) {
 
     const [ open, setOpen ] = useState(false)
     const [ currentIndex , setCurrentIndex ] = useState(0)
@@ -53,13 +53,15 @@ export function ProjectCards( {newProjects} ) {
                                     </div>
                                 ))
                             }
-                            {
-                                card.images.slice(0, 1).map((img, index) => (
-                                    <div key={index} className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
-                                        <img src={img} alt="project"/>
-                                    </div>
-                                ))
-                            }
+                            <div className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
+                                {
+                                    projectMobile && (
+                                        <img src={projectMobile.find(p => p.id === card.id).img} alt={card.id}/>
+                                    )
+                                }
+                            </div>
+                            
+                        
                         </div>
                                              
                         <div className="md:pl-10 md:p-5 p-4 flex flex-col items-center gap-5 md:block  flex-shrink flex-grow basis-1/2   "> 
@@ -87,3 +89,12 @@ export function ProjectCards( {newProjects} ) {
 
                             
                             
+
+
+// {
+//     card.images.slice(4, 5).map((img, index) => (
+//         <div key={index} className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
+//             <img src={img} alt="project"/>
+//         </div>
+//     ))
+// }

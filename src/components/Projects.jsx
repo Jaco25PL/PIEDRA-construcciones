@@ -2,6 +2,7 @@
 
 import { useState , useRef } from "react"
 import projects from "../data/projects"
+import projectMobile from "../data/projectMobile"
 import { Loader } from "./Loader"
 import { ProjectCards } from "./ProjectCards"
 
@@ -57,12 +58,12 @@ export function Projects({ projectsRef }) {
                 <div className="relative [&>div]:mb-5 md:[&>div]:mb-10">
                    
                     <div  ref={imgContRef}  className="relative"> 
-                        <ProjectCards newProjects={newProjects}/>
+                        <ProjectCards projectMobile={projectMobile} newProjects={newProjects}/>
                     </div>
 
                     <div className="mt-10 max-w-full flex justify-center gap-5  [&>button]:bg-gray-900 [&>a]:bg-red-500 [&_*]:py-2 sm:[&_*]:py-4 [&_*]:px-4 sm:[&_*]:px-8 [&_*]:rounded-lg [&_*]:text-lg [&_*]:font-bold [&_*]:text-gray-50 hover:[&>button]:bg-red-500 hover:[&>a]:bg-gray-900 [&_*]:transition-all [&_*]:duration-200 hover:[&_*]:transform hover:[&_*]:scale-110 ">
                         <button onClick={handleProjectsView} type="button">{handleView ? "VER MENOS" : "CONOCE MÁS"}</button>
-                        <a target="blank" href="https://www.instagram.com/piedra.construcciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">VER GALERÍA</a>
+                        <a target="blank" href="https://www.instagram.com/piedra.construcciones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">VER TODOS</a>
                     </div>
                 </div>
 

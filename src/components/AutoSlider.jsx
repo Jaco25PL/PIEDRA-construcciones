@@ -15,7 +15,7 @@ export function AutoSlider() {
     return(
         <div className="w-full flex justify-center ">
             <div className=" inline-flex flex-nowrap overflow-hidden w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                <div ref={sliderRef} className="flex flex-nowrap animate-infinite-scroll">
+                <div ref={sliderRef} className="flex flex-nowrap animate-infinite-scroll-v2 md:animate-infinite-scroll">
                     {
                         clientCards?.map(clientCard => (
                             <div key={clientCard.id} className={`mx-3 md:mx-6 w-80 h-80 px-3 py-5 md:px-6 md:py-10 rounded-xl ${clientCard.id % 2 === 0 ? "bg-slate-100" : "bg-slate-200"}`}>

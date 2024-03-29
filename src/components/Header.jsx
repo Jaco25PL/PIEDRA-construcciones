@@ -10,12 +10,12 @@ export function Header() {
     return(
       <section  className='mx-0 md:mx-20 xl:mx-40'>
         
-        <div className='mt-10 sm:mx-4 flex flex-col items-center'>
-          <div className='mx-2 max-w-4xl [&>h1]:text-center [&_span]:font-bold [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl'>
-            <h1>ENTREGAMOS LA <span>MÁXIMA CALIDAD</span> EN TODO LO QUE HACEMOS</h1>
+        <div className='mt-10 lg:mt-0 sm:mx-4 flex flex-col items-center'>
+          <div className='whitespace-nowrap flex justify-center mx-2 mb-10 lg:my-16 max-w-4xl [&>h1]:text-center lg:[&>h1]:text-7xl [&_span]:font-bold sm:[&_span]:text-4xl md:[&_span]:text-5xl lg:[&_span]:text-7xl'>
+            <h1>UNA EMPRESA DE <span>CONFIANZA</span></h1>
           </div>
           
-          <div className='mx-4 md:mx-0 text-center my-6 max-w-4xl'>
+          <div className='mx-4 md:mx-0 text-center mb-6 max-w-4xl'>
             <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</p>
           </div>
           
@@ -26,7 +26,7 @@ export function Header() {
               centeredSlides={true}
               lazy="load"
               autoplay={{
-                delay: 3000,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
               pagination={{
