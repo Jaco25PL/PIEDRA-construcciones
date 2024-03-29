@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 import projects from "../data/projects"
 import { Loader } from "./Loader"
 import { ProjectCards } from "./ProjectCards"
 import { useRef } from "react"
 
-export function Projects() {
+export function Projects({ projectsRef }) {
 
     const [ loading , setLoading ] = useState(true)
     const handleImage = () => {
@@ -29,7 +30,7 @@ export function Projects() {
     }
 
     return(
-        <section className="relative max-w-full">
+        <section ref={projectsRef} className="relative max-w-full">
             
             <div className="flex flex-col items-center sm:mx-0 md:mx-20 xl:mx-40">
                 <div className="mx-4  md:mx-0 [&>*]:text-center [&>p]:max-w-4xl [&>p]:my-6 ">

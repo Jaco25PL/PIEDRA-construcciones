@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 
-export function Footer() {
+import useScrollToTopBot from "../hooks/useScrollTopBot"
 
-    const scrollToTop = () => {
-        window.scrollTo({top: 0, behavior: "smooth"})
-    }
+export function Footer({ scrollToAbout , scrollToServices , scrollToProjects,  scrollToForm }) {
+
+    const scrollTo = useScrollToTopBot()
 
     return(
         <div className="max-w-full">
@@ -12,7 +13,7 @@ export function Footer() {
             <div className="w-full flex flex-col-reverse py-10 md:py-0 md:grid gap-10 md:gap-0 md:grid-flow-col [&>div]:m-auto">
 
                 <div>
-                    <button type="button" onClick={scrollToTop} className="[&_*]:text-gray-50 [&>h2]:text-6xl [&>h2]:font-bold [&>span]:text-3xl [&>span]:font-medium">
+                    <button type="button" onClick={() => scrollTo("top")} className="[&_*]:text-gray-50 [&>h2]:text-6xl [&>h2]:font-bold [&>span]:text-3xl [&>span]:font-medium">
                         <h2>PIEDRA</h2>
                         <span>construcciones</span>
                     </button>
@@ -21,10 +22,10 @@ export function Footer() {
                 <div>
                     <nav>
                         <ul className="[&>li]:text-center md:[&>li]:text-left [&>*]:text-gray-50 [&>*]:font-semibold [&>*]:pb-2 [&>*]:text-lg hover:[&>*]:transform hover:[&>*]:scale-110 [&>*]:transition-transform [&>*]:duration-200">
-                            <li><button onClick={scrollToTop} type="button">Home</button></li>
-                            <li><button type="button">Conocenos</button></li>
-                            <li><button type="button">Servicios</button></li>
-                            <li><button type="button">Proyectos</button></li>
+                            <li><button onClick={() => scrollTo("top")} type="button">Home</button></li>
+                            <li><button onClick={scrollToAbout} type="button">Conocenos</button></li>
+                            <li><button onClick={scrollToServices} type="button">Servicios</button></li>
+                            <li><button onClick={scrollToProjects} type="button">Proyectos</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +51,7 @@ export function Footer() {
 
                     <div>
                         <ul className="[&>li]:flex [&>li]:justify-start [&>li]:items-center [&>li]:mb-3 [&_img]:max-w-8 [&_img]:mr-5 md:[&_img]:mr-3 [&_span]:border-b-2 [&_span]:border-gray-700  [&_span]:tracking-wide [&_span]:text-gray-50 [&_span]:font-semibold [&_span]:text-lg  hover:[&_span]:transform hover:[&_span]:scale-110 [&_span]:transition-transform [&_span]:duration-200">
-                            <li><img src="./icons/write-light.png" alt="Write" /><span><button>Escribenos</button></span></li>
+                            <li><img src="./icons/write-light.png" alt="Write" /><span><button onClick={scrollToForm} type="button">Escribenos</button></span></li>
                             <li><img src="./icons/whatsapp-light.svg" alt="WhatsAapp" /><span><a href="https://api.whatsapp.com/send?phone=59893595589" target="blank">WhatsApp</a></span></li>
                             <li><img src="./icons/phone-light-02.png" alt="Phone" /><span>093 595 589</span></li>
                             <li><img src="./icons/envelope-light.png" alt="Mail" /><span><a href="mailto:piedraconstr.uy@gmail.com">piedraconstr.uy</a></span></li>

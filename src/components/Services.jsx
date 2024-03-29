@@ -1,12 +1,11 @@
+/* eslint-disable react/prop-types */
+
 import { useState } from "react"
 import servicesCards from "../data/servicesCards"
 import { Loader } from "./Loader"
-import { useRef } from "react"
 
-export function Services() {
+export function Services({ servicesRef }) {
 
-    const servRef = useRef(null)
-    
 
     const [ loading , setLoading ] = useState(true)
     const handleImage = () => {
@@ -14,7 +13,7 @@ export function Services() {
     }
 
     return (
-        <section ref={servRef} className="relative pt-10 mt-0 md:pt-20 md:mt-10 max-w-full mx-5 lg:mx-20 before:absolute before:content-[&quot;&quot;] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300">
+        <section ref={servicesRef} className="relative pt-10 mt-0 md:pt-20 md:mt-10 max-w-full mx-5 lg:mx-20 before:absolute before:content-[&quot;&quot;] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300">
             <header className="mx-auto max-w-4xl [&_*]:text-center  [&>h1]:mb-6 [&>p]:my-6">
                 <h2>EXPLORE NUESTRO <br/><span className="text-3xl sm:text-4xl md:text-5xl font-bold">CATÁLOGO DE SERVICIOS</span></h2>
                 <p><span className="font-semibold sm:text-lg">PIEDRA construcciones</span> se destaca por ofrecer una amplia gama de servicios de construcción. Desde remodelaciones hasta proyectos residenciales y comerciales</p>

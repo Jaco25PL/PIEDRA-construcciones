@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useForm } from "react-hook-form"
 
-export function Form() {
+export function Form({ fromRef }) {
 
     const { 
         register, 
@@ -14,7 +15,8 @@ export function Form() {
 
 
     return(
-        <div className="w-full pb-10 ">
+
+        <div ref={fromRef} className=" w-full pb-10 ">
             
             <h2 className="text-center w-fit mx-auto mb-6">¿QUIERES HACERNOS LLEGAR TUS IDEAS?</h2>
 

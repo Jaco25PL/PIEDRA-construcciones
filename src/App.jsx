@@ -8,25 +8,37 @@ import { WhyUsPlus } from './components/WhyUsPlus'
 import { Projects } from './components/Projects'
 import { FAQs } from './components/FAQs'
 import { Form } from './components/From'
+import { useRef } from 'react'
+import useScrollTo from './hooks/useScrollTo'
+
 
 function App() {
 
+  const aboutRef = useRef(null)
+  const servicesRef = useRef(null)
+  const projectsRef = useRef(null)
+  const fromRef = useRef(null)
+  
+  const { scrollToAbout,  scrollToServices , scrollToProjects , scrollToForm } = useScrollTo(aboutRef, servicesRef, projectsRef, fromRef)
+
   return (
     <div className='w-full'>
-      <Navigation/>
+
+      <Navigation scrollToAbout={scrollToAbout} scrollToServices={scrollToServices} scrollToProjects={scrollToProjects}/>
+
       <main className='w-full'>
 
         <Header/>
-        <About/>
-        <Services/>
+        <About aboutRef={aboutRef}/>
+        <Services servicesRef={servicesRef}/>
         <WhyUsPlus/>
-        <Projects/>
+        <Projects projectsRef={projectsRef}/>
         <FAQs/>
-        <Form/>
+        <Form fromRef={fromRef} />
 
       </main>
       
-      <Footer/>
+      <Footer scrollToAbout={scrollToAbout} scrollToServices={scrollToServices} scrollToProjects={scrollToProjects} scrollToForm={scrollToForm} />
     </div>
   )
 }

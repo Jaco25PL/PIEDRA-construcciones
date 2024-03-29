@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 import { AutoSlider } from "./AutoSlider"
 import { CTABtn } from "./CTABtn"
@@ -5,9 +6,9 @@ import { WhyUs } from "./WhyUs"
 import { Loader } from "./Loader"
 
 
-export function About() {
+export function About({ aboutRef }) {
 
-  
+
     const [ loading , setLoading ] = useState(true)
 
     const handleImage = () => {
@@ -15,7 +16,7 @@ export function About() {
     }
 
     return(
-        <section>
+        <section ref={aboutRef}>
             <div className='max-w-full sm:mx-0 md:mx-20 xl:mx-40 relative '>
                 <div className=' mt-9 pt-10 flex flex-col items-center before:content-[""] before:absolute before:top-0  before:h-1 before:w-1/2 before:bg-gray-300 '>
 

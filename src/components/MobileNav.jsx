@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export function MobileNav({ scrollTo }) {
+export function MobileNav({ scrollTo , scrollToAbout , scrollToServices , scrollToProjects}) {
 
     const [ isOpen, setIsOpen ] = useState(false)
 
@@ -34,9 +34,9 @@ export function MobileNav({ scrollTo }) {
 
           <ul className={`absolute ${isOpen ? "top-24 opacity-100" : "-top-80 opacity-0"}  transition-all duration-300 ease-in-out flex flex-col gap-4 w-full px-10 pb-10 pt-5 backdrop-blur-md bg-slate-700  bg-opacity-50 [&>li]:text-gray-50 [&>li]:pb-2 [&>li]:font-semibold [&>li]:border-b-2 [&>li]:border-gray-300 [&>li]:text-2xl`}>
             <li><button type="button" onClick={() => scrollTo("top")}>Home</button></li>
-            <li><button type="button"  >Servicios</button></li>
-            <li><button type="button"  >Nosotros</button></li>
-            <li><button type="button"  >Proyectos</button></li>
+            <li><button type="button" onClick={scrollToAbout} >Nosotros</button></li>
+            <li><button type="button" onClick={scrollToServices} >Servicios</button></li>
+            <li><button type="button" onClick={scrollToProjects} >Proyectos</button></li>
           </ul>
 
         </div>
