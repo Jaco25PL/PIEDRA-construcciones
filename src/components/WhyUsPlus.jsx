@@ -5,7 +5,7 @@ export function WhyUsPlus() {
     const cardData = whyUsCard.slice(3, 4)
 
     return(
-        <section className="w-full my-10 pt-10 pb-5 relative after:absolute after:content-[''] after:bottom-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
+        <section className="w-full my-16 py-16 md:my-20 md:py-20 relative after:absolute after:content-[''] after:bottom-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
 
             <header className="w-full [&_*]:w-fit [&_*]:mx-auto [&_*]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold [&_span]:tracking-tighter before:absolute before:content-[''] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300 ">
                 <h2>¿POR QUÉ NO <span>INVERTIR</span> EN EL <br/>FUTURO DE TU HOGAR?</h2>
@@ -14,7 +14,7 @@ export function WhyUsPlus() {
             <div className="sm:mx-4 lg:mx-20">
                 {
                     cardData?.map(card => (
-                        <div key={card.id} className="relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl my-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
+                        <div key={card.id} className="relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
                             <div className="relative flex-shrink flex-grow basis-3/5 max-h-[500px] w-full overflow-hidden rounded-xl">
                                 <video className="w-full" controls autoPlay muted loop>
                                     <source src={card.img} type="video/mp4"/>

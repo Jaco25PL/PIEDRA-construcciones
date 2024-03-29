@@ -25,7 +25,7 @@ export function AutoSlider() {
                                 </div>
                                 <div className="h-32 flex-col flex justify-between mx-2 text-center">
                                     <p className="text-base leading-5 italic mb-4">{clientCard.userQuote}</p>
-                                    <img className="mx-auto max-w-40 h-auto bg-center bg-cover" src="./rating-stars.svg" alt="stars" />
+                                    <img className="mx-auto max-w-40 h-auto bg-center bg-cover" src="./icons/rating-stars.svg" alt="stars" />
                                 </div>
                             </div>
                         ))

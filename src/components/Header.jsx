@@ -48,7 +48,7 @@ export function Header() {
           
           <CTABtn action="button" name="Escríbenos"/>
           
-          <div className='text-center '>
+          <div className='my-10 md:my-20 text-center '>
             <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>
             <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>
           </div>

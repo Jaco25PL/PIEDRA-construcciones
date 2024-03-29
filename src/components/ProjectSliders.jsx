@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 
-
 export function ProjectSliders({ card, currentIndex, handleClose, handleNext, handlePrev, manualScroll, handleAutoScroll }) {
 
     return (
         <>
         {/* mobile */}
             <div onTouchMove={handleAutoScroll} className="md:hidden resize-none overflow-x-auto scrollbar-none scrollbar-webkit">
-                <div className={`inline-flex ${manualScroll ? "animate-none" : "animate-infinite-scroll-slow"}`}>
+                <div className={`inline-flex ${manualScroll ? "animate-none" : "animate-infinite-scroll-slow"} items-center`}>
                     {
                         card?.images.map((img, index) => (
                             <div key={index} className="h-fit w-[370px] m-2 overflow-hidden rounded-lg">
@@ -19,8 +18,9 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
             </div>
 
         {/* desktop */}
-            <div  className="sm:px-2 md:mx-16 lg:w-10/12 h-1/2 md:h-5/6 hidden md:flex justify-center overflow-hidden md:rounded-xl bg-gray-900 bg-opacity-70">
-                <div className="w-[1000px] flex flex-col items-center justify-center [&>img]:w-full [&>img]:rounded-lg [&>img]:h-auto [&>img]:duration-500">
+
+            <div  className=" lg:w-10/12  hidden md:flex justify-center">
+                <div className="max-h-dvh md:p-2 px-0 flex flex-col items-center justify-center [&>img]:w-auto [&>img]:rounded-lg [&>img]:h-full [&>img]:duration-500">
                     <img src={card.images[currentIndex]} alt="image"/>
                 </div>
             </div>

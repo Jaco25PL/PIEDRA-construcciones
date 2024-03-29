@@ -1,17 +1,20 @@
 import { useState } from "react"
 import servicesCards from "../data/servicesCards"
 import { Loader } from "./Loader"
+import { useRef } from "react"
 
 export function Services() {
 
-    const [ loading , setLoading ] = useState(true)
+    const servRef = useRef(null)
+    
 
+    const [ loading , setLoading ] = useState(true)
     const handleImage = () => {
         setLoading(false)
     }
 
     return (
-        <section className="max-w-full mx-5 lg:mx-20">
+        <section ref={servRef} className="relative pt-10 mt-0 md:pt-20 md:mt-10 max-w-full mx-5 lg:mx-20 before:absolute before:content-[&quot;&quot;] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300">
             <header className="mx-auto max-w-4xl [&_*]:text-center  [&>h1]:mb-6 [&>p]:my-6">
                 <h2>EXPLORE NUESTRO <br/><span className="text-3xl sm:text-4xl md:text-5xl font-bold">CATÁLOGO DE SERVICIOS</span></h2>
                 <p><span className="font-semibold sm:text-lg">PIEDRA construcciones</span> se destaca por ofrecer una amplia gama de servicios de construcción. Desde remodelaciones hasta proyectos residenciales y comerciales</p>
@@ -22,7 +25,7 @@ export function Services() {
                     servicesCards?.map(card => (
                         <div key={card.id} className={`bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl justify-center items-center gap-5 lg:gap-10  flex flex-col ${card.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}>
 
-                            <div className="relative  flex-shrink flex-grow basis-1/2 overflow-hidden   rounded-xl [&>img]:w-full [&>img]:h-auto">
+                            <div className="relative flex-shrink flex-grow basis-1/2 flex items-center overflow-hidden max-h-[260px] md:max-h-[312px] lg:max-h-[320px] xl:max-h-[440px] rounded-xl [&>img]:w-full [&>img]:h-auto">
                                 {loading && <Loader/>}
                                 <img loading="lazy" onLoad={handleImage} src={card.img} alt={card.title} />
                             </div>

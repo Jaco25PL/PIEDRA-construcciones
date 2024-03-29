@@ -67,27 +67,3 @@ export function Projects() {
         </section>
     )
 }
-
-// {
-//     amount?.map(card => (
-//         <div key={card.id} className="rounded-xl mx-4 lg:mx-10 xl:mx-20 flex justify-center items-center md:items-start flex-col md:flex-row bg-gradient-to-b md:bg-gradient-to-r from-transparent to-slate-200 ">
-
-//             <div className="inline-flex gap-5 flex-shrink flex-grow md:[&>div]:max-w-xs xl:[&>div]:max-w-sm [&>div]:overflow-hidden [&>div]:rounded-xl [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
-//                 <div className="hidden lg:block"><img src={card.before} alt={card.title}/></div>
-//                 <div><img src={card.after} alt={card.title} /></div>   
-//             </div>
-
-//             <div className="flex-shrink flex flex-col items-center md:block  flex-grow basis-1/2 lg:basis-2/5 p-4 md:p-5">
-
-//                 <div className="[&>h4]:text-3xl [&>h4]:font-semibold [&>h4]:mb-5 [&_*]:text-center md:[&_*]:text-left [&>p]:text-base [&>p]:leading-5">
-//                     <h4>{card.title}</h4>
-//                     <p>{card.text}</p>
-//                 </div>
-//                 <div className="mt-5 xl:mt-10 [&_*]:w-fit [&_*]:bg-red-500 [&_*]:py-2 [&_*]:px-4 [&_*]:rounded-lg [&_*]:font-bold [&_*]:text-gray-50 hover:[&_*]:bg-gray-900 [&_*]:transition-all [&_*]:duration-200 hover:[&_*]:transform hover:[&_*]:scale-110 ">
-//                     <button type="button">CONOCER</button>
-//                 </div>
-
-//             </div>
-//         </div> 
-//     ))
-// }

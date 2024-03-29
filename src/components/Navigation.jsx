@@ -9,6 +9,12 @@ export function Navigation() {
     }else if(to === "bottom"){
       const height = document.documentElement.scrollHeight
       window.scrollTo({top: height, behavior: 'smooth'})
+    }else if(to === "services"){
+      window.scrollTo({ top: 4500, behavior: 'smooth'})
+    }else if(to === "about"){
+      window.scrollTo({ top: 1400, behavior: 'smooth'})
+    }else if(to === "projects"){
+      window.scrollTo({ top: 7300, behavior: 'smooth'})
     }
   }
 
@@ -25,9 +31,9 @@ export function Navigation() {
                 <div>
                   <ul className='nav-link flex flex-row md:gap-8 gap-4 font-semibold [&>li]:relative [&>li:after]:absolute [&>li:after]:content-[""] [&>li:after]:top-8 [&>li:after]:left-0 [&>li:after]:w-full [&>li:after]:h-1 [&>li:after]:bg-gray-900 [&>li:after]:opacity-0 [&>li:after]:transition-opacity [&>li:after]:duration-300 hover:[&>li:after]:opacity-100'>
                     <li><button type="button" onClick={() => scrollTo("top")}>Home</button></li>
-                    <li><button type="button" >Servicios</button></li>
-                    <li><button type="button" >Nosotros</button></li>
-                    <li><button type="button" >Proyectos</button></li>
+                    <li><button type="button" onClick={() => scrollTo("about")} >Nosotros</button></li>
+                    <li><button type="button" onClick={() => scrollTo("services")} >Servicios</button></li>
+                    <li><button type="button" onClick={() => scrollTo("projects")} >Proyectos</button></li>
                   </ul>
                 </div>
                 <div className='bg-gray-100 bg-opacity-70 hover:bg-red-500 hover:text-gray-100 text-gray-800 font-bold py-2 px-4 rounded-lg inline-flex items-center cursor-pointer transition-all duration-200'>
@@ -35,8 +41,6 @@ export function Navigation() {
                 </div>
               </nav>
 
-              
-              
             </div>
 
             <div className="sm:hidden">

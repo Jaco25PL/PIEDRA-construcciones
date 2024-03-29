@@ -14,7 +14,7 @@ export function FAQs() {
 
 
     return (
-        <section className="w-full my-5 pt-10 pb-5 relative after:absolute after:content-[''] after:top-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
+        <section className="w-full my-16 pt-16 md:my-20 md:pt-20 pb-5 relative after:absolute after:content-[''] after:top-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
             <div>
                 <div className="[&>*]:w-fit [&>*]:mx-auto [&>*]:text-center [&>div]:text-4xl [&>div]:tracking-tighter [&_button]:font-bold">
                     <h2 className="font-bold">PREGUNTAS FRECUENTES</h2>
