@@ -5,13 +5,13 @@ export function Form({ fromRef }) {
 
     const { 
         register, 
-        handleSubmit,
+        // handleSubmit,
         formState: { errors },
     } = useForm()
 
-    const onSubmit = (data) => {
-        console.log(data)
-    }
+    // const onSubmit = (data) => {
+    //     console.log(data)
+    // }
 
 
     return(
@@ -21,7 +21,8 @@ export function Form({ fromRef }) {
             <h2 className="text-center w-fit mx-auto mb-6">¿QUIERES HACERNOS LLEGAR TUS IDEAS?</h2>
 
             <div className="bg-gradient-to-t to-gray-400 from-transparent p-10 sm:max-w-xl mx-auto sm:rounded-xl [&>form]:flex [&>form]:flex-col [&>form]:gap-4 [&>form]:w-full ">
-                <form onSubmit={handleSubmit(onSubmit)} id="myForm" className=" [&_input]:w-full [&_textarea]:w-full  [&_input]:p-3 [&_input]:rounded-lg focus:[&_input]:outline focus:[&_input]:outline-gray-300 focus:[&_input]:outline-4 [&_textarea]:p-3 [&_textarea]:rounded-lg focus:[&_textarea]:outline focus:[&_textarea]:outline-gray-300 focus:[&_textarea]:outline-4 [&_textarea]:h-52 [&_textarea]:resize-none">
+                {/* <form action="https://getform.io/f/lakmkona" method="POST" onSubmit={handleSubmit(onSubmit)} id="myForm" className=" [&_input]:w-full [&_textarea]:w-full  [&_input]:p-3 [&_input]:rounded-lg focus:[&_input]:outline focus:[&_input]:outline-gray-300 focus:[&_input]:outline-4 [&_textarea]:p-3 [&_textarea]:rounded-lg focus:[&_textarea]:outline focus:[&_textarea]:outline-gray-300 focus:[&_textarea]:outline-4 [&_textarea]:h-52 [&_textarea]:resize-none"> */}
+                <form action="https://getform.io/f/lakmkona" method="POST" id="myForm" className=" [&_input]:w-full [&_textarea]:w-full  [&_input]:p-3 [&_input]:rounded-lg focus:[&_input]:outline focus:[&_input]:outline-gray-300 focus:[&_input]:outline-4 [&_textarea]:p-3 [&_textarea]:rounded-lg focus:[&_textarea]:outline focus:[&_textarea]:outline-gray-300 focus:[&_textarea]:outline-4 [&_textarea]:h-52 [&_textarea]:resize-none">
 
                     <div>
                         <input {...register("name", {
@@ -30,21 +31,21 @@ export function Form({ fromRef }) {
                                 value: 3,
                                 message: "Introduce un nombre real"
                             }
-                        })} type="text" placeholder="NOMBRE"  />
+                        })} type="text" placeholder="NOMBRE" name="name" />
                         {  errors.name && (
                             <div className="text-red-600 font-medium">{errors.name.message}</div>
                         ) }
                     </div>
                     
                     <div>
-                        <input {...register("phone", {
+                        <input  {...register("phone", {
                             validate: (value) => {
                                 if(value && value.length !== 9){
                                     return "Porfavor introduzca un numero valido"
                                 }
                             }
                         })}
-                        type="tel" placeholder="TELEFONO"  />
+                        type="tel" placeholder="TELEFONO" name="phone" />
                         { errors.phone && (
                             <div className="text-red-600 font-medium">{errors.phone.message}</div>
                         )}
@@ -58,7 +59,7 @@ export function Form({ fromRef }) {
                                 value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                                 message: "Correo invalido"
                             },
-                        })} type="text" placeholder="EMAIL" />
+                        })} type="text" placeholder="EMAIL"  name="email"/>
                         {  errors.email && (
                             <div className="text-red-600 font-medium">{errors.email.message}</div>
                         ) }
@@ -71,7 +72,7 @@ export function Form({ fromRef }) {
                                 value: 20,
                                 message: "Porfavor, detalle sus dudas"
                             }
-                        })} placeholder="ESCRIBA UN MENSAJE" />
+                        })} placeholder="ESCRIBA UN MENSAJE" name="message" />
                         { errors.message && (
                             <div className="text-red-600 font-medium">{errors.message.message}</div>
                         )}
