@@ -47,7 +47,7 @@ export function ProjectCards( {newProjects, projectMobile} ) {
                     <motion.div 
                     
                     initial={{opacity: 0}}
-                    transition={{delay: 0.2, duration: 1, ease: "easeInOut"}}
+                    transition={{delay: 0, duration: 1, ease: "easeInOut"}}
                     whileInView={{opacity: 1}}
                     
                     key={card.id} className=" mb-5 h-full overflow-hidden rounded-lg mx-4 lg:mx-10 xl:mx-20 flex justify-center items-center flex-col md:flex-row bg-gradient-to-b md:bg-gradient-to-r from-transparent to-slate-200 ">
