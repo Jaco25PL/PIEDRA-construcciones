@@ -16,20 +16,25 @@ export function Header() {
         <div className='mt-10 lg:mt-0 sm:mx-4 flex flex-col items-center'>
           <motion.div 
             initial={{ opacity: 0 }}
-            transition={{duration: 1}}
+            transition={{duration: 1.5}}
             whileInView={{ opacity: 1 }}
             viewport={{once: true}}
             className='whitespace-nowrap flex justify-center mx-2 mb-10 lg:my-16 max-w-4xl [&>h1]:text-center lg:[&>h1]:text-7xl [&_span]:font-bold [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl lg:[&_span]:text-7xl'>
-            <h1>UNA EMPRESA DE <span>CONFIANZA</span></h1>
+            <h1>UNA<br className="sm:hidden"/> EMPRESA DE <span>CONFIANZA</span></h1>
           </motion.div>
           
           <div className='mx-4 md:mx-0 text-center mb-6 max-w-4xl'>
-            <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</p>
+            <motion.p
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.5 , duration: 1}}
+            whileInView={{ opacity: 1 }}
+            viewport={{once: true}}
+            >En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</motion.p>
           </div>
           
           <motion.div
             initial={{y:100}}
-            transition={{delay: 0, duration: 1, type: "spring", stiffness: 100, damping: 15}}
+            transition={{delay: 0, duration: 1.5, type: "spring", stiffness: 100, damping: 15}}
             whileInView={{y: 0}}
             viewport={{once: true}}
           >
@@ -63,7 +68,7 @@ export function Header() {
           
           <motion.div 
             initial={{ opacity: 0 }}
-            transition={{duration: 0.5}}
+            transition={{duration: 1}}
             whileInView={{ opacity: 1 }}
             className='my-10 md:my-20 text-center '>
               <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>

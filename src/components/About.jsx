@@ -42,7 +42,7 @@ export function About({ aboutRef }) {
 
                     <motion.div
                         initial={{y: 100}}
-                        transition={{delay: 0, duration: 1, type: "spring", stiffness: 100, damping: 15}}
+                        transition={{delay: 0, duration: 2, type: "spring", stiffness: 100, damping: 15}}
                         whileInView={{ y: 0 }}
                         viewport={{once: true}}
                     className="relative min-w-[200px] min-h-[260px] xl:min-h-[380px] flex items-center max-w-lg md:max-w-xl overflow-hidden rounded-md mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
