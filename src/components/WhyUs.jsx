@@ -1,7 +1,8 @@
 import { useState } from "react"
 import whyUsCard from "../data/whyUsCards"
 import { Loader } from "./Loader"
-
+import { motion } from "framer-motion"
+ 
 export function WhyUs() {
     
 
@@ -15,16 +16,27 @@ export function WhyUs() {
 
 
     return(
-        <section className="mt-20 max-w-full sm:mx-4 lg:mx-20 relative ">
+        <section className=" mt-20 max-w-full sm:mx-4 lg:mx-20 relative ">
                
-            <div className="mb-12 [&>h2]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl  [&_span]:font-bold">
+            <motion.div 
+            initial={{ opacity: 0 }}
+            transition={{duration: 1}}
+            whileInView={{ opacity: 1 }}
+            viewport={{once: true}}
+            
+            className="mb-12 [&>h2]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl  [&_span]:font-bold">
                 <h2>¿POR QUÉ NOS <span>ELIGEN</span>?</h2>
-            </div>
+            </motion.div>
 
             <div>
                     {
                         cardData?.map(card => (
-                            <div key={card.id} className=" relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
+                            <motion.div 
+                            initial={{ x: 200 }}
+                            transition={{delay: 0, duration: 1, type: "spring", stiffness: 100, damping: 15}}
+                            whileInView={{ x: 0 }}
+                            viewport={{once: true}}
+                            key={card.id} className=" relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
 
                                 <div className="relative min-h-[260px] xl:min-h-[400px] min-w-52 flex items-center flex-shrink flex-grow basis-3/5 overflow-hidden rounded [&>img]:rounded [&>img]:w-full [&>img]:h-auto">
                                     { loading && <Loader/> }
@@ -45,7 +57,7 @@ export function WhyUs() {
                                     </ul>
                                 </div>
 
-                            </div>
+                            </motion.div>
                         ))
                     }
             </div>

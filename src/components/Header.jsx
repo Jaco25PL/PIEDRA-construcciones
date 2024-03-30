@@ -4,22 +4,35 @@ import "swiper/css"
 import "swiper/css/pagination"
 import { Autoplay, Pagination } from "swiper/modules"
 import headerSlider from "../data/header-slider"
+import { motion } from "framer-motion"
 
 export function Header() {
 
     return(
       <section  className='mx-0 md:mx-20 xl:mx-40'>
+
+        
         
         <div className='mt-10 lg:mt-0 sm:mx-4 flex flex-col items-center'>
-          <div className='whitespace-nowrap flex justify-center mx-2 mb-10 lg:my-16 max-w-4xl [&>h1]:text-center lg:[&>h1]:text-7xl [&_span]:font-bold sm:[&_span]:text-4xl md:[&_span]:text-5xl lg:[&_span]:text-7xl'>
+          <motion.div 
+            initial={{ opacity: 0 }}
+            transition={{duration: 1}}
+            whileInView={{ opacity: 1 }}
+            viewport={{once: true}}
+            className='whitespace-nowrap flex justify-center mx-2 mb-10 lg:my-16 max-w-4xl [&>h1]:text-center lg:[&>h1]:text-7xl [&_span]:font-bold [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl lg:[&_span]:text-7xl'>
             <h1>UNA EMPRESA DE <span>CONFIANZA</span></h1>
-          </div>
+          </motion.div>
           
           <div className='mx-4 md:mx-0 text-center mb-6 max-w-4xl'>
             <p>En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</p>
           </div>
           
-          <div>
+          <motion.div
+            initial={{y:100}}
+            transition={{delay: 0, duration: 1, type: "spring", stiffness: 100, damping: 15}}
+            whileInView={{y: 0}}
+            viewport={{once: true}}
+          >
             <Swiper 
               slidesPerView={"auto"}
               spaceBetween={5} 
@@ -44,15 +57,19 @@ export function Header() {
               }
 
             </Swiper>
-          </div>
+          </motion.div>
           
           <CTABtn action="button" name="Escríbenos"/>
           
-          <div className='my-10 md:my-20 text-center '>
-            <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>
-            <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>
-          </div>
-        
+          <motion.div 
+            initial={{ opacity: 0 }}
+            transition={{duration: 0.5}}
+            whileInView={{ opacity: 1 }}
+            className='my-10 md:my-20 text-center '>
+              <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>
+              <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>
+          </motion.div>
+
         </div>
 
       </section>

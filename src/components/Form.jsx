@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useForm } from "react-hook-form"
+import { motion } from "framer-motion"
 
 export function Form({ fromRef }) {
 
@@ -16,7 +17,14 @@ export function Form({ fromRef }) {
 
     return(
 
-        <div ref={fromRef} className="px-5 sm:mx-0 w-full pb-10 ">
+        <motion.div 
+        
+        initial={{opacity: 0}}
+        transition={{delay: 0, duration: 1, ease: "easeInOut"}}
+        whileInView={{opacity: 1}}
+        viewport={{once: true}}
+        ref={fromRef} 
+        className="px-5 sm:mx-0 w-full pb-10 ">
             
             <h2 className="text-center w-fit mx-auto mb-6">CONTACTATE CON NOSOTROS</h2>
 
@@ -82,6 +90,6 @@ export function Form({ fromRef }) {
                 </form>
             </div> 
         
-        </div>
+        </motion.div>
     )
 }

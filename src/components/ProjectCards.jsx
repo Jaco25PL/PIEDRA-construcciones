@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ProjectSliders } from "./ProjectSliders"
+import { motion } from "framer-motion"
 
 export function ProjectCards( {newProjects, projectMobile} ) {
 
@@ -43,7 +44,13 @@ export function ProjectCards( {newProjects, projectMobile} ) {
         <>
             {
                 newProjects?.map(card => (
-                    <div key={card.id} className="mb-5 h-full overflow-hidden rounded-lg mx-4 lg:mx-10 xl:mx-20 flex justify-center items-center flex-col md:flex-row bg-gradient-to-b md:bg-gradient-to-r from-transparent to-slate-200 ">
+                    <motion.div 
+                    
+                    initial={{opacity: 0}}
+                    transition={{delay: 0.2, duration: 1, ease: "easeInOut"}}
+                    whileInView={{opacity: 1}}
+                    
+                    key={card.id} className=" mb-5 h-full overflow-hidden rounded-lg mx-4 lg:mx-10 xl:mx-20 flex justify-center items-center flex-col md:flex-row bg-gradient-to-b md:bg-gradient-to-r from-transparent to-slate-200 ">
                         
                         <div className="sm:grid grid-rows-1 grid-flow-col gap-5 flex-shrink flex-grow basis-1/2">
                             {
@@ -78,7 +85,7 @@ export function ProjectCards( {newProjects, projectMobile} ) {
                             <ProjectSliders card={card} currentIndex={currentIndex} handleClose={handleClose} handlePrev={handlePrev} handleNext={handleNext} manualScroll={manualScroll} handleAutoScroll={handleAutoScroll} />
                         </div> 
 
-                    </div>
+                    </motion.div>
                 ))
             }      
         </>

@@ -1,4 +1,5 @@
 import whyUsCard from "../data/whyUsCards"
+import { motion } from "framer-motion"
 
 export function WhyUsPlus() {
 
@@ -8,10 +9,19 @@ export function WhyUsPlus() {
         <section className="w-full my-16 py-16 md:my-20 md:py-20 relative after:absolute after:content-[''] after:bottom-0 after:left-1/4 after:h-1 after:w-1/2 after:bg-gray-300">
 
             <header className="w-full [&_*]:w-fit [&_*]:mx-auto [&_*]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold [&_span]:tracking-tighter before:absolute before:content-[''] before:top-0 before:left-1/4 before:h-1 before:w-1/2 before:bg-gray-300 ">
-                <h2>¿POR QUÉ <span>INVERTIR</span> EN EL <br/>FUTURO DE TU HOGAR?</h2>
+                <motion.h2
+                initial={{ opacity: 0 }}
+                transition={{delay: 0.2, duration: 1}}
+                whileInView={{ opacity: 1 }}
+                viewport={{once: true}}
+                >¿POR QUÉ <span>INVERTIR</span> EN EL <br/>FUTURO DE TU HOGAR?</motion.h2>
             </header>
 
-            <div className="sm:mx-4 lg:mx-20">
+            <motion.div
+            initial={{ y: 100 }}
+            transition={{delay: 0, duration: 1, type: "spring", stiffness: 100, damping: 15}}
+            whileInView={{ y: 0 }}
+            className="sm:mx-4 lg:mx-20">
                 {
                     cardData?.map(card => (
                         <div key={card.id} className="relative bg-gradient-to-t md:bg-gradient-to-l from-gray-100 rounded-b-3xl md:rounded-e-3xl mt-10 flex flex-col mx-4 md:mx-0 md:flex-row justify-center items-center gap-5 lg:gap-10">
@@ -36,7 +46,7 @@ export function WhyUsPlus() {
                         </div>
                     ))
                 }
-            </div>
+            </motion.div>
         
         </section>
     )

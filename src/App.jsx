@@ -22,11 +22,11 @@ function App() {
   const { scrollToAbout,  scrollToServices , scrollToProjects , scrollToForm } = useScrollTo(aboutRef, servicesRef, projectsRef, fromRef)
 
   return (
-    <div className='w-full'>
+    <div className='w-full '>
 
       <Navigation scrollToAbout={scrollToAbout} scrollToServices={scrollToServices} scrollToProjects={scrollToProjects}/>
 
-      <main className='w-full'>
+      <main className='w-full overflow-x-hidden'>
 
         <Header/>
         <About aboutRef={aboutRef}/>
