@@ -19,13 +19,13 @@ export function Services({ servicesRef }) {
             <header className="mx-auto max-w-4xl [&_*]:text-center  [&>h1]:mb-6 [&>p]:my-6">
                 <motion.h2
                 initial={{ opacity: 0 }}
-                transition={{delay: 0.2,duration: 1}}
+                transition={{delay: 0,duration: 1}}
                 whileInView={{ opacity: 1 }}
                 viewport={{once: true}}
-                >EXPLORE NUESTRO <br/><span className="text-3xl sm:text-4xl md:text-5xl font-bold">CATÁLOGO DE SERVICIOS</span></motion.h2>
+                >EXPLORA NUESTRO <br/><span className="text-3xl sm:text-4xl md:text-5xl font-bold">CATÁLOGO DE SERVICIOS</span></motion.h2>
                 <motion.p
                 initial={{ opacity: 0 }}
-                transition={{delay: 0.8,duration: 1}}
+                transition={{delay: 0,duration: 1}}
                 whileInView={{ opacity: 1 }}
                 viewport={{once: true}}
                 ><span className="font-semibold sm:text-lg">PIEDRA construcciones</span> se destaca por ofrecer una amplia gama de servicios de construcción.<br/>Desde remodelaciones hasta proyectos residenciales y comerciales</motion.p>

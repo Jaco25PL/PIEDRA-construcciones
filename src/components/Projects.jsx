@@ -41,7 +41,7 @@ export function Projects({ projectsRef }) {
                     <div className="[&>*]:text-center [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold [&_span]:tracking-tighter">
                         <motion.h2
                         initial={{opacity: 0}}
-                        transition={{delay: 0.2, duration: 1}}
+                        transition={{delay: 0, duration: 1}}
                         whileInView={{opacity: 1}}
                         viewport={{once: true}}
 
@@ -49,7 +49,7 @@ export function Projects({ projectsRef }) {
                     </div>
                     <motion.p
                     initial={{opacity: 0}}
-                    transition={{delay: 0.6, duration: 1}}
+                    transition={{delay: 0, duration: 1}}
                     whileInView={{opacity: 1}}
                     viewport={{once: true}}
 

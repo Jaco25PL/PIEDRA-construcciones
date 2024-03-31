@@ -1,8 +1,28 @@
-# React + Vite
+# PIEDRA construcciones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Welcome to the PIEDRA Construcciones website repository! This project is a single-page application built for a construction company based in Uruguay. It showcases the company's services, projects, about the company, and provides a contact form for inquiries**
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Design: Figma (prototyping)
+* Frontend: React.js (framework)
+* Build Tool: Vite
+* Styling: Tailwind CSS
+* Libraries:
+    * Swiper.js (image slider)
+    * Framer Motion (animations)
+    * react-hook-form (form validation)
+* Hosting: Cloudflare
+
+## Project Overview
+
+The development process involved several stages:
+
+1. Design Phase: Utilized Figma to create the initial design. Presented the design to the client for feedback and revisions.
+2. Implementation: Developed the website as a single-page application using React.js, incorporating the approved design.
+3. Deployment: Hosted the website on Cloudflare for fast and reliable access.
+
+**For any inquiries or feedback, you can reach out to the project maintainer:**
+
+- **GitHub:** [Jaco25PL](https://github.com/Jaco25PL)
+- **LinkedIn:** [J. Langone](https://www.linkedin.com/in/jplangone/)

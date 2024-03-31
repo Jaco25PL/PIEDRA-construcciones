@@ -1,5 +1,6 @@
 import { useState } from "react"
 import userFAQs from "../data/userFAQs"
+import { motion } from "framer-motion"
 
 export function FAQs() {
 
@@ -23,7 +24,12 @@ export function FAQs() {
                 <div className="md:my-6 mx-auto lg:max-w-4xl">
                     {
                         questions?.map(q => (
-                            <button type="button" onClick={() => handleText(q)} key={q.id} className="hover:bg-slate-200 transition-colors duration-300 rounded-lg w-full p-5 ">
+                            <motion.button 
+                            initial={{ scale: .85 }}
+                            transition={{ delay: 0 , duration: 1 }}
+                            whileInView={{ scale: 1 }}
+                            viewport={{ once: true }}
+                            type="button" onClick={() => handleText(q)} key={q.id} className="hover:bg-slate-200 transition-colors duration-300 rounded-lg w-full p-5 ">
                                 
                                 <div className="flex items-center justify-between w-full">
                                     <div className="md:text-xl font-semibold tracking-tight">{q.ask}</div>
@@ -35,7 +41,7 @@ export function FAQs() {
                                 </div>
 
                                 <div className="w-full h-0.5 bg-slate-400"></div>
-                            </button>
+                            </motion.button>
                         ))
                     }
                 </div>

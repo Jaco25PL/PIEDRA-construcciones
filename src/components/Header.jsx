@@ -10,8 +10,6 @@ export function Header() {
 
     return(
       <section  className='mx-0 md:mx-20 xl:mx-40'>
-
-        
         
         <div className='mt-10 lg:mt-0 sm:mx-4 flex flex-col items-center'>
           <motion.div 
@@ -67,9 +65,9 @@ export function Header() {
           <CTABtn action="button" name="Escríbenos"/>
           
           <motion.div 
-            initial={{ opacity: 0 }}
-            transition={{duration: 1}}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 , scale: 0.8}}
+            transition={{delay: 0, duration: 1}}
+            whileInView={{ opacity: 1 , scale: 1 }}
             className='my-10 md:my-20 text-center '>
               <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>
               <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>

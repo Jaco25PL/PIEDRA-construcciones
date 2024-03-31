@@ -200,6 +200,8 @@ const projects = [
             "./projects/renders/03.avif",
             "./projects/renders/04.avif",
             "./projects/renders/05.avif",
+            "./projects/renders/10.avif",
+            "./projects/renders/11.avif",
             "./projects/renders/06.avif",
             "./projects/renders/07.avif",
             "./projects/renders/08.avif",

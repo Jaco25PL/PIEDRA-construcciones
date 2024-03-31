@@ -28,13 +28,13 @@ export function About({ aboutRef }) {
                         className=" mb-6 [&>span]:font-bold [&>span]:text-3xl sm:[&>span]:text-4xl md:[&>span]:text-5xl" >CONOCE AL <span className="font-bold text-5xl">EQUIPO</span></motion.h2>
                         <motion.p 
                         initial={{ opacity: 0 }}
-                        transition={{delay: 0.5,duration: 1}}
+                        transition={{delay: 0,duration: 1}}
                         whileInView={{ opacity: 1 }}
                         viewport={{once: true}}
                         className="mb-3 "><span className="font-semibold sm:text-lg">Calidad y confianza</span>. Resultados destacados en cada proyecto, construyendo relaciones duraderas con nuestros clientes</motion.p>
                         <motion.p
                         initial={{ opacity: 0 }}
-                        transition={{delay: 0.8,duration: 1}}
+                        transition={{delay: 0,duration: 1}}
                         whileInView={{ opacity: 1 }}
                         viewport={{once: true}}
                         >Cada proyecto es una oportunidad para brillar, entregando resultados que superan tus expectativas y <span className="font-semibold sm:text-lg">fortalecen nuestra relación contigo</span></motion.p>
@@ -59,7 +59,7 @@ export function About({ aboutRef }) {
                         className="mb-6">¿QUIÉNES NOS <span>RECOMIENDAN</span>?</motion.h2>
                         <motion.p
                         initial={{ opacity: 0 }}
-                        transition={{delay: 0.5,duration: 1}}
+                        transition={{delay: 0,duration: 1}}
                         whileInView={{ opacity: 1 }}
                         viewport={{once: true}}
                         className="px-4 px:mx-0 max-w-xl">Dejemos que nuestros clientes hablen por nosotros. Sus experiencias son la mejor evidencia de nuestro trabajo de calidad</motion.p>
@@ -74,7 +74,7 @@ export function About({ aboutRef }) {
 
             <motion.div 
             initial={{ opacity: 0 }}
-            transition={{delay: 0.2,duration: 1}}
+            transition={{delay: 0,duration: 1}}
             whileInView={{ opacity: 1 }}
             className=" max-w-full flex justify-center">
                 <CTABtn action="button" name="Comunícate" />
