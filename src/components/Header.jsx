@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 import "swiper/css/pagination"
 import { Autoplay, Pagination } from "swiper/modules"
-import headerSlider from "../data/header-slider"
+import headerSlider from "../data/headerSlider"
 import { motion } from "framer-motion"
 
 export function Header() {
