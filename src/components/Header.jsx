@@ -31,9 +31,9 @@ export function Header() {
           </div>
           
           <motion.div
-            initial={{y:100}}
-            transition={{delay: 0, duration: 1.5, type: "spring", stiffness: 100, damping: 15}}
-            whileInView={{y: 0}}
+            initial={{y:100 , opacity: 0}}
+            transition={{delay: 0.5, duration: 1.5, type: "spring", stiffness: 100, damping: 15}}
+            whileInView={{y: 0 , opacity: 1}}
             viewport={{once: true}}
           >
             <Swiper 
