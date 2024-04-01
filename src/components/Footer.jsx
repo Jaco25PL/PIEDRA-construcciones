@@ -7,7 +7,8 @@ export function Footer({ scrollToAbout , scrollToServices , scrollToProjects,  s
     const scrollTo = useScrollToTopBot()
 
     return(
-        <footer className="max-w-full">
+        <footer className="z-40 relative max-w-full">
+            <div className="h-10 bg-gradient-to-t to-transparent from-gray-50"></div>
 
             <main className="w-full bg-gray-950 md:py-20 md:px-10">
                 <div className="w-full flex flex-col-reverse py-10 md:py-0 md:grid gap-10 md:gap-0 md:grid-flow-col [&>div]:m-auto">
