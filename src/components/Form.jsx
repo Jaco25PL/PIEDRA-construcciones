@@ -53,7 +53,7 @@ export function Form({ fromRef }) {
                                 }
                             }
                         })}
-                        type="tel" placeholder="TELEFONO" name="phone" />
+                        type="tel" placeholder="TELÉFONO" name="phone" />
                         { errors.phone && (
                             <div className="text-red-600 font-medium">{errors.phone.message}</div>
                         )}
@@ -80,7 +80,7 @@ export function Form({ fromRef }) {
                                 value: 20,
                                 message: "Porfavor, detalle sus dudas"
                             }
-                        })} placeholder="ESCRIBA UN MENSAJE" name="message" />
+                        })} placeholder="ESCRIBE UN MENSAJE" name="message" />
                         { errors.message && (
                             <div className="text-red-600 font-medium">{errors.message.message}</div>
                         )}

@@ -27,7 +27,7 @@ export function Header() {
             transition={{ delay: 0.5 , duration: 1}}
             whileInView={{ opacity: 1 }}
             viewport={{once: true}}
-            >En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir su visión en realidad. Confíe en nosotros para la excelencia en cada paso del camino</motion.p>
+            >En <span className="font-semibold sm:text-lg">PIEDRA construcciones</span>, construimos hogares y proyectos de calidad con más de <span className="font-semibold sm:text-lg">40 años de experiencia</span>. Nuestro equipo familiar, obsesionado con los detalles, se compromete a convertir tu visión en realidad. Confía en nosotros para la excelencia en cada paso del camino</motion.p>
           </div>
           
           <motion.div

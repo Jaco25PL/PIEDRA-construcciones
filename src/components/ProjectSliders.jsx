@@ -21,7 +21,7 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
 
             <div  className=" lg:w-10/12  hidden md:flex justify-center">
                 <div className="max-h-dvh md:p-2 px-0 flex flex-col items-center justify-center [&>img]:w-auto [&>img]:rounded [&>img]:h-full [&>img]:duration-500">
-                    <img src={card.images[currentIndex]} alt="image"/>
+                    <img src={card.images[currentIndex]} alt="image" loading="lazy"/>
                 </div>
             </div>
 
