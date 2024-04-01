@@ -20,7 +20,7 @@ export function Navigation({ scrollToAbout , scrollToServices , scrollToProjects
                 <div>
                   <ul className='nav-link flex flex-row md:gap-8 gap-4 font-semibold [&>li]:relative [&>li:after]:absolute [&>li:after]:content-[""] [&>li:after]:top-8 [&>li:after]:left-0 [&>li:after]:w-full [&>li:after]:h-1 [&>li:after]:bg-gray-900 [&>li:after]:opacity-0 [&>li:after]:transition-opacity [&>li:after]:duration-300 hover:[&>li:after]:opacity-100'>
 
-                    <li><button type="button" onClick={() => scrollTo("top")}>Home</button></li>
+                    <li><button type="button" onClick={() => scrollTo("top")}>Inicio</button></li>
                     <li><button type="button" onClick={scrollToAbout} >Nosotros</button></li>
                     <li><button type="button" onClick={scrollToServices} >Servicios</button></li>
                     <li><button type="button" onClick={scrollToProjects} >Proyectos</button></li>

@@ -10,6 +10,7 @@ import { FAQs } from './components/FAQs'
 import { Form } from './components/Form'
 import { useRef } from 'react'
 import useScrollTo from './hooks/useScrollTo'
+import { FixedBtn } from './components/FixedBtn'
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
   const { scrollToAbout,  scrollToServices , scrollToProjects , scrollToForm } = useScrollTo(aboutRef, servicesRef, projectsRef, fromRef)
 
   return (
-    <div className='w-full '>
+    <div className='w-full relative'>
 
       <Navigation scrollToAbout={scrollToAbout} scrollToServices={scrollToServices} scrollToProjects={scrollToProjects}/>
+      <FixedBtn/>
 
       <main className='w-full overflow-x-hidden'>
 
