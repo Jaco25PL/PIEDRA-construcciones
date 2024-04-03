@@ -123,6 +123,8 @@ const projects = [
            "./projects/ref-house-02/25.avif",
            "./projects/ref-house-02/26.avif",
            "./projects/ref-house-02/27.avif",
+           "./projects/ref-house-02/28.avif",
+           "./projects/ref-house-02/29.avif",
         ],
         text: "Para combatir el frío que afectaba a nuestro cliente, realizamos un trabajo de yeso en techos y paredes exteriores, asegurando un hogar más cálido. Además, renovamos por completo la instalación eléctrica y sanitaria. En el segundo piso, instalamos piso de porcelanato imitación madera, reemplazamos las ventanas por nuevas de aluminio con doble vidrio y renovamos la escalera. Para finalizar, llevamos a cabo un trabajo completo de pintura"
     },
@@ -186,8 +188,6 @@ const projects = [
             "./projects/roof/09.avif",
             "./projects/roof/10.avif",
             "./projects/roof/12.avif",
-            "./projects/roof/13.avif",
-            "./projects/roof/14.avif",
         ],
         text: "Estos son nuestros más recientes proyectos de trabajo en techos"
     },
