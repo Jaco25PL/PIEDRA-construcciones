@@ -4,7 +4,7 @@ const clientCards = [
     {id: 3,img: "./icons/user-profile.avif", userName: "Maria G.", userQuote: '"Pintura interior y exterior perfecta. Empresa honesta y transparente. Un ejemplo de integridad"'},
     {id: 4,img: "./icons/user-profile.avif", userName: "Gustavo Pesqueira", userQuote: '"Reforma de cocina y baños impresionante. Enfocados en detalles y calidad. Puntuales y muy limpios"'},
     {id: 5,img: "./icons/user-profile.avif", userName: "Pablo A.", userQuote: '"Una obra de máxima calidad. La remodelación de mi negocio superó todas mis expectativas. Equipo responsable y comprometido. Gracias"'},
-    {id: 6,img: "./icons/user-profile.avif",userName: "Javier M.",userQuote: '"Encantado con el trabajo. Construyeron una ampliación en mi vivienda y el resultado fue impecable. El trato fue excelente en todo momento. Sin duda los recomiendo"'},
+    {id: 6,img: "./icons/user-profile.avif", userName: "Javier M.",userQuote: '"Encantado con el trabajo. Construyeron una ampliación en mi casa y el resultado fue impecable. El trato fue excelente en todo momento"'},
 ]
 
 export default clientCards
