@@ -43,12 +43,12 @@ export function Services({ servicesRef }) {
 
                             <div className="relative flex-shrink flex-grow basis-1/2 flex items-center overflow-hidden min-w-[100px] min-h-[290px] xl:min-h-[430px] max-h-[260px] sm:max-h-[400px] lg:max-h-[320px] xl:max-h-[440px] rounded [&>img]:w-full [&>img]:h-auto">
                                 {loading && <Loader/>}
-                                <img loading="lazy" onLoad={handleImage} src={card.img} alt={card.title} />
+                                <img loading="lazy" onLoad={handleImage} src={card.img} title="service" alt={card.title} />
                             </div>
     
                             <div className="flex-shrink flex-grow basis-1/2">
                                 <div className="flex justify-center mb-5 md:mb-10 md:justify-start items-center gap-5 md:gap-11 [&>img]:max-w-11 lg:[&>img]:max-w-20 [&>span]:text-3xl md:[&>span]:text-4xl [&>span]:font-semibold ">
-                                    <img src={card.icon} alt={card.title} />
+                                    <img src={card.icon} title="service" alt={card.title} />
                                     <span>{card.title}</span>
                                 </div>
                         

@@ -41,7 +41,7 @@ export function MobileNav({ scrollTo , scrollToAbout , scrollToServices , scroll
               </div>
               
               <div className="[&_img]:max-w-10">
-                <button type="button" onClick={() => scrollTo("bottom")}><img src="./icons/contact.svg"/></button>
+                <button type="button" onClick={() => scrollTo("bottom")}><img src="./icons/contact.svg" alt="contact" title="contact"/></button>
               </div>
           </nav>
 

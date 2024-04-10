@@ -10,7 +10,7 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
                     {
                         card?.images.map((img, index) => (
                             <div key={index} className="h-fit w-[370px] m-2 overflow-hidden rounded">
-                                <img  src={img} alt="project" className=""/>
+                                <img  src={img} title="project" alt="project" className=""/>
                             </div>
                         ))
                     }
@@ -21,7 +21,7 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
 
             <div  className=" lg:w-10/12  hidden md:flex justify-center">
                 <div className="max-h-dvh md:p-2 px-0 flex flex-col items-center justify-center [&>img]:w-auto [&>img]:rounded [&>img]:h-full [&>img]:duration-500">
-                    <img src={card.images[currentIndex]} alt="image" loading="lazy"/>
+                    <img src={card.images[currentIndex]} title="image" alt="image" loading="lazy"/>
                 </div>
             </div>
 
@@ -29,8 +29,8 @@ export function ProjectSliders({ card, currentIndex, handleClose, handleNext, ha
                 <button onClick={handleClose} type="button">VOLVER</button>
             </div>
             
-            <button onClick={() => handlePrev(card.images)} className="hidden md:block" type="button"><img className="max-w-14 lg:max-w-20 absolute left-0 xl:left-5 rotate-180 hover:transform hover:scale-110 active:transform active:scale-95 transition-all duration-200 ease-in-out " src="./icons/arrow.svg" alt="arrow" /></button>
-            <button onClick={() => handleNext(card.images)} className="hidden md:block" type="button"><img className="max-w-14 lg:max-w-20 absolute right-0  xl:right-5  hover:transform hover:scale-110 active:transform active:scale-95 transition-all duration-200 ease-in-out " src="./icons/arrow.svg" alt="arrow" /></button>
+            <button onClick={() => handlePrev(card.images)} className="hidden md:block" type="button"><img className="max-w-14 lg:max-w-20 absolute left-0 xl:left-5 rotate-180 hover:transform hover:scale-110 active:transform active:scale-95 transition-all duration-200 ease-in-out " src="./icons/arrow.svg" alt="arrow" title="arrow"/></button>
+            <button onClick={() => handleNext(card.images)} className="hidden md:block" type="button"><img className="max-w-14 lg:max-w-20 absolute right-0  xl:right-5  hover:transform hover:scale-110 active:transform active:scale-95 transition-all duration-200 ease-in-out " src="./icons/arrow.svg" alt="arrow" title="arrow"/></button>
 
         </>
     )

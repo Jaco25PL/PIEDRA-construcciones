@@ -58,7 +58,7 @@ export function ProjectCards( {newProjects, projectMobile} ) {
                             {
                                 card.images.slice(1, 3).map((img, index) => (
                                     <div key={index} className="hidden sm:block overflow-hidden rounded [&_img]:w-full [&_img]:aspect-square [&_img]:object-cover">
-                                        <img src={img} alt="project"/>
+                                        <img src={img} title="project" alt="project"/>
                                     </div>
                                 ))
                             }
@@ -66,7 +66,7 @@ export function ProjectCards( {newProjects, projectMobile} ) {
                             <div className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
                                 {
                                     projectMobile && (
-                                        <img src={projectMobile.find(p => p.id === card.id).img} alt={card.id}/>
+                                        <img src={projectMobile.find(p => p.id === card.id).img} title="project mobile" alt={card.id}/>
                                     )
                                 }
                             </div>
@@ -94,17 +94,3 @@ export function ProjectCards( {newProjects, projectMobile} ) {
         </>
     )
 }
-
-
-
-                            
-                            
-
-
-// {
-//     card.images.slice(4, 5).map((img, index) => (
-//         <div key={index} className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
-//             <img src={img} alt="project"/>
-//         </div>
-//     ))
-// }

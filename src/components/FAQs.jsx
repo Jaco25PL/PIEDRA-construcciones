@@ -33,7 +33,7 @@ export function FAQs() {
                                 
                                 <div className="flex items-center justify-between w-full">
                                     <div className="md:text-xl font-semibold tracking-tight">{q.ask}</div>
-                                    <div className={`p-3 max-w-11 [&>img]:transform  [&>img]:transition-transform [&>img]:duration-300 ${showText[q.id] ? "[&>img]:rotate-0" : "[&>img]:rotate-45"}`}><img src="./icons/cross-02.svg" alt="cross" /></div>
+                                    <div className={`p-3 max-w-11 [&>img]:transform  [&>img]:transition-transform [&>img]:duration-300 ${showText[q.id] ? "[&>img]:rotate-0" : "[&>img]:rotate-45"}`}><img src="./icons/cross-02.svg" title="cross" alt="cross"   /></div>
                                 </div>
 
                                 <div className={`grid overflow-hidden transition-all duration-300 my-4 mb-4 [&>div]:text-start lg:[&>div]:text-lg lg:[&>div]:tracking-tight ${showText[q.id] ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>

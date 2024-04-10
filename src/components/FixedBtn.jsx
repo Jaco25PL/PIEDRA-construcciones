@@ -9,7 +9,7 @@ export function FixedBtn() {
         whileInView={{ opacity: 1 }}
         className="z-20 w-full sticky top-3/4">
 
-            <a className="absolute w-20 right-2 md:right-10" href="https://api.whatsapp.com/send?phone=59893595589" target="blank"><img src="./icons/whatsapp.png" alt="WhatsApp" /></a>
+            <a className="absolute w-20 right-2 md:right-10" title="whatsapp" href="https://api.whatsapp.com/send?phone=59893595589" target="blank"><img src="./icons/whatsapp.png" title="WhatsApp" alt="WhatsApp" /></a>
             
         </motion.div>
     )

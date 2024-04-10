@@ -40,20 +40,20 @@ export function WhyUs() {
 
                                 <div className="relative min-h-[260px] xl:min-h-[400px] min-w-52 flex items-center flex-shrink flex-grow basis-3/5 overflow-hidden rounded [&>img]:rounded [&>img]:w-full [&>img]:h-auto">
                                     { loading && <Loader/> }
-                                    <img onLoad={handleImage} loading="lazy" src={card.img} alt={card.title} />
+                                    <img onLoad={handleImage} loading="lazy" src={card.img} title="header image" alt={card.title} />
                                 </div>
 
                                 <div className="pb-5 md:pb-0 px-5 md:pl-0 flex-shrink flex-grow basis-2/4">
                                     <div className="w-full mb-4 inline-flex gap-5 md:gap-10 items-center justify-center md:justify-start">
-                                            <div className="max-w-14 md:max-w-16 lg:max-w-20 [&>img]:w-full [&>img]:h-auto"><img src={card.icon} alt={card.title} /></div>
+                                            <div className="max-w-14 md:max-w-16 lg:max-w-20 [&>img]:w-full [&>img]:h-auto"><img src={card.icon} title="card image" alt={card.title} /></div>
                                             <div className="[&>h3]:font-bold [&>h3]:text-3xl md:[&>h3]:text-4xl">
                                                 <h3>{card.title}</h3>
                                             </div>
                                     </div>
                                     <ul className="[&_img]:max-w-8 sm:[&_img]:max-w-10 [&>li]:w-fit lg:[&>li]:text-lg xl:[&>li]:text-xl [&>li]:pb-1 md:[&>li]:pb-3 [&>li]:inline-flex [&>li]:items-center [&>li]:gap-5 tracking-tight flex flex-col md:block">
-                                        <li><img src="./icons/icon-done.svg" alt="done"/>{card.txI}</li>
-                                        <li><img src="./icons/icon-done.svg" alt="done"/>{card.txII}</li>
-                                        <li><img src="./icons/icon-done.svg" alt="done"/>{card.txIII}</li>
+                                        <li><img src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txI}</li>
+                                        <li><img src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txII}</li>
+                                        <li><img src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txIII}</li>
                                     </ul>
                                 </div>
 

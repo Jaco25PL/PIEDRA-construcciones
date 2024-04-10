@@ -54,7 +54,7 @@ export function Header() {
               {
                 headerSlider?.map(e => (
                   <SwiperSlide key={e.id}>
-                    <img src={e.img} alt="PIEDRA" loading="lazy"/>
+                    <img src={e.img} alt="PIEDRA" title="brand" loading="lazy"/>
                   </SwiperSlide>
                 ))
               }
