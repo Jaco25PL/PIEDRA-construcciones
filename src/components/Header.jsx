@@ -49,12 +49,12 @@ export function Header() {
                 clickable: true,
               }}
               modules={[ Autoplay, Pagination ]}
-              className="mySwiper overflow-hidden sm:rounded-md lg:max-h-[600px] xl:max-w-[900px] sm:[&_img]:rounded-md lg:[&_img]:w-full"
+              className="mySwiper aspect-video overflow-hidden sm:rounded-md lg:max-h-[600px] xl:max-w-[900px] sm:[&_img]:rounded-md lg:[&_img]:w-full"
             >
               {
                 headerSlider?.map(e => (
                   <SwiperSlide key={e.id}>
-                    <img src={e.img} alt="PIEDRA" title="brand" loading="lazy"/>
+                    <img src={e.img} alt="PIEDRA" title="brand" loading="lazy" className="aspect-video "/>
                   </SwiperSlide>
                 ))
               }

@@ -8,7 +8,6 @@ export function FAQs() {
     const [ showText , setShowText ] = useState(false)
 
     const handleText = (current) => {
-
         const newState = { ...showText, [current.id]: !showText[current.id]  || false}
         setShowText(newState)
     }

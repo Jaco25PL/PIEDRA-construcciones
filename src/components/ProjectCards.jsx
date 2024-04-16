@@ -3,12 +3,15 @@
 import { useState } from "react"
 import { ProjectSliders } from "./ProjectSliders"
 import { motion } from "framer-motion"
+import { Loader } from "./Loader"
 
 export function ProjectCards( {newProjects, projectMobile} ) {
 
     const [ open, setOpen ] = useState(false)
     const [ currentIndex , setCurrentIndex ] = useState(0)
     const [ manualScroll, setManualScroll ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
+    
 
 // handle open card
     const handleImage = ( data ) => {
@@ -63,12 +66,20 @@ export function ProjectCards( {newProjects, projectMobile} ) {
                                 ))
                             }
                 {/* Mobile view */}
-                            <div className="block sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
+                            <div className="relative block min-w-[200px] min-h-[358px] sm:hidden overflow-hidden rounded [&_img]:w-full [&_img]:h-full [&_img]:aspect-square [&_img]:object-cover">
                                 {
-                                    projectMobile && (
-                                        <img src={projectMobile.find(p => p.id === card.id).img} title="project mobile" alt={card.id}/>
+                                    loading && (
+                                        <div className="absolute top-1/3 left-1/2">
+                                            <Loader/>
+                                        </div>
                                     )
                                 }
+                                {
+                                    projectMobile && (
+                                        <img onLoad={() => setLoading(false)} src={projectMobile.find(p => p.id === card.id).img} title="project mobile" alt={card.id}/>
+                                    )
+                                }
+                                
                             </div>
                             
                         
