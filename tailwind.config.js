@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['"Golos Text"', 'Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif']
+    },
     extend: {
       animation: {
         "infinite-scroll": "infinite-scroll 35s linear infinite",
