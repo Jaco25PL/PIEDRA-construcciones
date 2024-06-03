@@ -34,13 +34,13 @@ export function Footer({ scrollToAbout , scrollToServices , scrollToProjects,  s
                     <div>
                         <ul className="flex gap-4 md:gap-0 md:block [&>li]:mb-3 [&>li]:list-none [&_a]:flex  [&_a]:justify-start [&_a]:items-center [&_span]:border-b-2 [&_span]:border-gray-700  [&_span]:tracking-wide [&_span]:hidden md:[&_span]:block [&_span]:text-gray-50 [&_span]:font-semibold [&_span]:text-lg  hover:[&_span]:transform hover:[&_span]:scale-110 [&_span]:transition-transform [&_span]:duration-200 md:[&_img]:mr-3 [&_img]:max-w-11 md:[&_img]:max-w-9">
                             <li><a title="instagram" href="https://www.instagram.com/piedra.construcciones/" target="blank">
-                                <img src="./icons/instagram-light.svg" title="instagram" alt="Instagram" /><span>Instagram</span>
+                                <img src="./icons/instagram-light.svg" title="instagram" alt="Instagram logo" /><span>Instagram</span>
                             </a></li>
                             <li><a title="facebook" href="https://www.facebook.com/piedra.construcciones.uy" target="blank">
-                                <img src="./icons/facebook-light.svg" title="facebook" alt="Facebook" /><span>Facebook</span>
+                                <img src="./icons/facebook-light.svg" title="facebook" alt="Facebook logo" /><span>Facebook</span>
                             </a></li>
                             <li><a title="linkedin" href="https://www.linkedin.com/in/richard-piedra" target="blank">
-                                <img src="./icons/linkedin-light.svg" title="linkedin" alt="LinkedIn" /><span>LinkedIn</span>
+                                <img src="./icons/linkedin-light.svg" title="linkedin" alt="LinkedIn logo" /><span>LinkedIn</span>
                             </a></li>
                         </ul>
                     </div>
@@ -52,10 +52,10 @@ export function Footer({ scrollToAbout , scrollToServices , scrollToProjects,  s
 
                         <div>
                             <ul className="[&>li]:flex [&>li]:justify-start [&>li]:items-center [&>li]:mb-3 [&_img]:max-w-8 [&_img]:mr-5 md:[&_img]:mr-3 [&_span]:border-b-2 [&_span]:border-gray-700  [&_span]:tracking-wide [&_span]:text-gray-50 [&_span]:font-semibold [&_span]:text-lg  hover:[&_span]:transform hover:[&_span]:scale-110 [&_span]:transition-transform [&_span]:duration-200">
-                                <li><img src="./icons/write-light.png" title="write a letter" alt="Write" /><span><button onClick={scrollToForm} type="button">Escríbenos</button></span></li>
-                                <li><img src="./icons/whatsapp-light.svg" title="whatsapp" alt="WhatsAapp" /><span><a title="whatsapp" href="https://api.whatsapp.com/send?phone=59893595589" target="blank">WhatsApp</a></span></li>
-                                <li><img src="./icons/phone-light-02.png" title="phone number" alt="Phone" /><span>093 595 589</span></li>
-                                <li><img src="./icons/envelope-light.png" title="mail account" alt="Mail" /><span><a title="mail" href="mailto:piedraconstr.uy@gmail.com">piedraconstr.uy</a></span></li>
+                                <li><img src="./icons/write-light.png" title="write a letter" alt="Write a letter" /><span><button onClick={scrollToForm} type="button">Escríbenos</button></span></li>
+                                <li><img src="./icons/whatsapp-light.svg" title="whatsapp" alt="WhatsAapp logo" /><span><a title="whatsapp" href="https://api.whatsapp.com/send?phone=59893595589" target="blank">WhatsApp</a></span></li>
+                                <li><img src="./icons/phone-light-02.png" title="phone number" alt="Phone logo" /><span>093 595 589</span></li>
+                                <li><img src="./icons/envelope-light.png" title="mail account" alt="Email logo" /><span><a title="mail" href="mailto:piedraconstr.uy@gmail.com">piedraconstr.uy</a></span></li>
                             </ul>
                         </div>
                     </div>

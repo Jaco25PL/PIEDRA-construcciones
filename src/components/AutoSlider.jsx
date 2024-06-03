@@ -26,7 +26,7 @@ export function AutoSlider() {
                                 <div className="h-28 mx-2 text-center">
                                     <p className="text-base leading-5 italic mb-2">{clientCard.userQuote}</p>
                                 </div>
-                                <img className=" mx-auto max-w-40 h-auto bg-center bg-cover" src="./icons/rating-stars.svg" title="stars" alt="stars" />
+                                <img className=" mx-auto max-w-40 h-auto bg-center bg-cover" src="./icons/rating-stars.svg" title="stars" alt="Rating stars" />
                             </div>
                         ))
                     }

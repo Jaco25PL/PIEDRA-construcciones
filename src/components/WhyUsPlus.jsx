@@ -38,9 +38,9 @@ export function WhyUsPlus() {
                                         </div>
                                 </div>
                                 <ul className="[&>li]:w-fit lg:[&>li]:text-lg xl:[&>li]:text-xl [&>li]:pb-1 md:[&>li]:pb-3 [&>li]:inline-flex [&>li]:items-center [&>li]:gap-5 tracking-tight flex flex-col md:block">
-                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txI}</li>
-                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txII}</li>
-                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done"/>{card.txIII}</li>
+                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done icon"/>{card.txI}</li>
+                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done icon"/>{card.txII}</li>
+                                    <li><img className="max-w-10" src="./icons/icon-done.svg" title="done icon" alt="done icon"/>{card.txIII}</li>
                                 </ul>
                             </div>
                         </div>

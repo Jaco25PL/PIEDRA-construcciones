@@ -47,7 +47,7 @@ export function About({ aboutRef }) {
                         viewport={{once: true}}
                     className="relative min-w-[200px] min-h-[260px] xl:min-h-[380px] flex items-center max-w-lg md:max-w-xl overflow-hidden rounded-md mx-4 md:mx-0 my-10 [&>img]:bg-cover [&>img]:bg-center [&>img]:h-auto [&>img]:w-full">
                         { loading && <Loader/> }
-                        <img onLoad={handleImage} loading="lazy" src="./header-slider/truck.avif" title="team" alt="team" />
+                        <img onLoad={handleImage} loading="lazy" src="./header-slider/truck.avif" title="team" alt="Piedra construcciones team" />
                     </motion.div>
 
                     <div className="text-center [&>*]:mx-auto mb-6 [&_span]:text-3xl sm:[&_span]:text-4xl md:[&_span]:text-5xl [&_span]:font-bold">
