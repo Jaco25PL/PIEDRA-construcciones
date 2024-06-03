@@ -63,7 +63,7 @@ export function Projects({ projectsRef }) {
                 viewport={{once: true}}
                 className="relative flex items-center overflow-hidden md:rounded-md max-w-5xl xl:w-full xl:px-20 [&>img]:bg-center [&>img]:cover [&>img]:w-full [&>img]:h-auto md:[&>img]:rounded-md">
                     { loading && <Loader/> }
-                    <img onLoad={handleImage} loading="lazy" src="./projects/truck-2.avif" title="project" alt="project" />
+                    <img onLoad={handleImage} loading="lazy" src="./projects/truck-2.avif" title="project" alt="Project header image" />
                 </motion.div>   
 
             </div>
