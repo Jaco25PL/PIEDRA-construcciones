@@ -1,3 +1,5 @@
+# robots.txt for https://piedraconstrucciones.com.uy
+
 User-agent: *
 Disallow: /admin/
 Allow: /
