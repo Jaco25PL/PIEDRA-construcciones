@@ -31,7 +31,7 @@ export function FAQs() {
                             type="button" onClick={() => handleText(q)} key={q.id} className="hover:bg-slate-200 transition-colors duration-300 rounded-lg w-full p-5 ">
                                 
                                 <div className="flex items-center justify-between w-full">
-                                    <div className="md:text-xl font-semibold tracking-tight">{q.ask}</div>
+                                    <div className="md:text-xl text-left font-semibold tracking-tight">{q.ask}</div>
                                     <div className={`p-3 max-w-11 [&>img]:transform  [&>img]:transition-transform [&>img]:duration-300 ${showText[q.id] ? "[&>img]:rotate-0" : "[&>img]:rotate-45"}`}><img src="./icons/cross-02.svg" title="cross" alt="cross"   /></div>
                                 </div>
 

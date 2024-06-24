@@ -46,7 +46,7 @@ export function MobileNav({ scrollTo , scrollToAbout , scrollToServices , scroll
           </nav>
 
           <ul className={`z-40 absolute ${isOpen ? "top-24 opacity-100" : "-top-80 opacity-0"}  transition-all duration-300 ease-in-out flex flex-col gap-4 w-full px-10 pb-10 pt-5 backdrop-blur-md bg-slate-700  bg-opacity-50 [&>li]:text-gray-50 [&>li]:pb-2 [&>li]:font-semibold [&>li]:border-b-2 [&>li]:border-gray-300 [&>li]:text-2xl`}>
-            <li><button type="button" onClick={() => handleGoTo("top")}>Home</button></li>
+            <li><button type="button" onClick={() => handleGoTo("top")}>Inicio</button></li>
             <li><button type="button" onClick={() => handleGoTo("about")} >Nosotros</button></li>
             <li><button type="button" onClick={() => handleGoTo("services")} >Servicios</button></li>
             <li><button type="button" onClick={() => handleGoTo("projects")} >Proyectos</button></li>
