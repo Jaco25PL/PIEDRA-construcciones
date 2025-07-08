@@ -65,7 +65,7 @@ export function Footer({ scrollToAbout , scrollToServices , scrollToProjects,  s
             </main>
             <div className="bg-gray-950 pb-1 md:py-2 flex flex-col gap-5 text-center">
                 <span className="font-medium text-gray-700">Desarrollado por <a className="underline hover:text-gray-400 transition-colors duration-300" title="developer linkedin account" href="https://www.linkedin.com/in/jplangone" target="blank">JNPL</a></span>
-                <span className="cursor-default text-gray-800 text-xs sm:text-base">© 2024 PIEDRA construcciones - Todos los derechos reservados</span>
+                <span className="cursor-default text-gray-800 text-xs sm:text-base">© 2025 PIEDRA construcciones - Todos los derechos reservados</span>
             </div>
 
         </footer>

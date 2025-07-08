@@ -68,6 +68,7 @@ export function Header() {
             initial={{ opacity: 0 , scale: 0.8}}
             transition={{delay: 0, duration: 1}}
             whileInView={{ opacity: 1 , scale: 1 }}
+            viewport={{once: true}}
             className='my-10 md:my-20 text-center '>
               <h2 className='text-7xl sm:text-9xl font-bold tracking-wider '>PIEDRA</h2>
               <p className='text-5xl sm:text-7xl tracking-tight relative -top-4'>construcciones</p>
